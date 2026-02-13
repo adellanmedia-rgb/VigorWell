@@ -245,7 +245,7 @@ export default function CryoContent() {
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-30"
+          className="object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/85 to-vigor-dark/60" />
         <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/50" />
@@ -298,11 +298,12 @@ export default function CryoContent() {
               <div className="relative aspect-square max-w-md mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-br from-vigor-teal-500/20 to-vigor-orange-500/20 rounded-3xl blur-2xl" />
                 <div className="relative bg-white/5 rounded-3xl p-2 border border-white/10">
-                  <div className="aspect-square rounded-2xl overflow-hidden bg-vigor-silver-900">
+                  <div className="relative aspect-square rounded-2xl overflow-hidden bg-vigor-silver-900">
                     <Image
                       src="/images/cryo-hero.jpg"
                       alt="Cryo Bodysculpting Treatment"
                       fill
+                      sizes="(max-width: 768px) 100vw, 400px"
                       className="object-cover"
                     />
                   </div>

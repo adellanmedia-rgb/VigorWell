@@ -278,7 +278,7 @@ export default function SpaCapsuleContent() {
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-30"
+          className="object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/85 to-vigor-dark/60" />
         <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/50" />
