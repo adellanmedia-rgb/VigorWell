@@ -21,7 +21,15 @@ export default function ServicesPage() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-vigor-dark overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-vigor-teal-900/20 via-vigor-dark to-vigor-orange-900/20" />
+        <Image
+          src="/images/services-hero.jpg"
+          alt="Premium wellness spa services"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-25"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-vigor-dark/70 via-vigor-dark/80 to-vigor-dark" />
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <FadeIn>

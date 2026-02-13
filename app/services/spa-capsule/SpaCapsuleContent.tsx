@@ -272,10 +272,16 @@ export default function SpaCapsuleContent() {
     <>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-vigor-dark overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-1/2 h-full bg-gradient-to-b from-vigor-orange-900/20 to-transparent" />
-          <div className="absolute bottom-0 right-1/4 w-1/2 h-full bg-gradient-to-t from-vigor-teal-900/20 to-transparent" />
-        </div>
+        <Image
+          src="/images/spa-capsule-hero.jpg"
+          alt="Spa capsule relaxation therapy"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/85 to-vigor-dark/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/50" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -325,11 +331,12 @@ export default function SpaCapsuleContent() {
               <div className="relative aspect-square max-w-md mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-br from-vigor-orange-500/20 to-vigor-teal-500/20 rounded-3xl blur-2xl" />
                 <div className="relative bg-white/5 rounded-3xl p-2 border border-white/10">
-                  <div className="aspect-square rounded-2xl overflow-hidden bg-vigor-silver-900">
+                  <div className="relative aspect-square rounded-2xl overflow-hidden bg-vigor-silver-900">
                     <Image
                       src="/images/spa-capsule-hero.jpg"
                       alt="Delight Spa Capsule"
                       fill
+                      sizes="(max-width: 768px) 100vw, 400px"
                       className="object-cover"
                     />
                   </div>
