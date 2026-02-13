@@ -76,8 +76,9 @@ export default function Header() {
                     href={item.href}
                     className={cn(
                       'px-4 py-2 font-body text-sm font-medium rounded-lg transition-all duration-300',
-                      'hover:bg-vigor-silver-100/50',
-                      isScrolled ? 'text-vigor-silver-700' : 'text-vigor-silver-600'
+                      isScrolled
+                        ? 'text-vigor-silver-700 hover:text-vigor-orange-600 hover:bg-vigor-silver-100/50'
+                        : 'text-white/80 hover:text-white'
                     )}
                   >
                     <span className="flex items-center gap-1">
@@ -125,8 +126,8 @@ export default function Header() {
                 href={`tel:${siteConfig.phone}`}
                 className={cn(
                   'flex items-center gap-2 font-body text-sm font-medium transition-colors',
-                  isScrolled ? 'text-vigor-silver-600' : 'text-vigor-silver-500',
-                  'hover:text-vigor-orange-500'
+                  isScrolled ? 'text-vigor-silver-600' : 'text-white/70',
+                  'hover:text-vigor-orange-400'
                 )}
               >
                 <Phone className="w-4 h-4" />
@@ -148,13 +149,16 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden relative z-10 p-2 rounded-lg hover:bg-vigor-silver-100/50 transition-colors"
+              className={cn(
+                'lg:hidden relative z-10 p-2 rounded-lg transition-colors',
+                isScrolled ? 'hover:bg-vigor-silver-100/50' : 'hover:bg-white/10'
+              )}
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (
-                <X className="w-6 h-6 text-vigor-silver-700" />
+                <X className={cn('w-6 h-6', isScrolled ? 'text-vigor-silver-700' : 'text-white')} />
               ) : (
-                <Menu className="w-6 h-6 text-vigor-silver-700" />
+                <Menu className={cn('w-6 h-6', isScrolled ? 'text-vigor-silver-700' : 'text-white')} />
               )}
             </button>
           </nav>
