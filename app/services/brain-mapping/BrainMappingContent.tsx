@@ -212,7 +212,7 @@ export default function BrainMappingContent() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-vigor-dark overflow-hidden">
         <img
-          src="/images/brain-mapping-hero.jpg"
+          src="/images/brain-mapping-hero-opt.jpg"
           alt="Brain mapping neuroscience"
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
