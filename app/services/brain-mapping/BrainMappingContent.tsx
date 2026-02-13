@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { 
   Brain, Activity, Zap, Target, Users, Clock, 
@@ -212,20 +211,16 @@ export default function BrainMappingContent() {
     <>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-vigor-dark overflow-hidden">
-        <Image
+        <img
           src="/images/brain-mapping-hero.jpg"
           alt="Brain mapping neuroscience"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-30"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/85 to-vigor-dark/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/30" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="max-w-2xl">
               <FadeIn>
                 <Link 
                   href="/services" 
@@ -265,23 +260,6 @@ export default function BrainMappingContent() {
                   </motion.div>
                 </div>
               </FadeIn>
-            </div>
-
-            <FadeIn delay={0.3} direction="left" className="hidden lg:block">
-              <div className="relative aspect-square max-w-md mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-br from-vigor-teal-500/20 to-vigor-orange-500/20 rounded-3xl blur-2xl" />
-                <div className="relative bg-white/5 rounded-3xl p-2 border border-white/10">
-                  <div className="aspect-square rounded-2xl overflow-hidden bg-vigor-silver-900">
-                    <Image
-                      src="/images/brain-mapping-hero.jpg"
-                      alt="Brain Mapping Session"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </FadeIn>
           </div>
         </div>
       </section>

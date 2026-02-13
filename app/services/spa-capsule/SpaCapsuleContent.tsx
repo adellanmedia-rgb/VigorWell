@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { 
   Sparkles, Flame, Droplets, Vibrate, Lightbulb, Music,
@@ -281,8 +280,7 @@ export default function SpaCapsuleContent() {
         <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/30" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="max-w-2xl">
               <FadeIn>
                 <Link 
                   href="/services" 
@@ -322,24 +320,6 @@ export default function SpaCapsuleContent() {
                   </motion.div>
                 </div>
               </FadeIn>
-            </div>
-
-            <FadeIn delay={0.3} direction="left" className="hidden lg:block">
-              <div className="relative aspect-square max-w-md mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-br from-vigor-orange-500/20 to-vigor-teal-500/20 rounded-3xl blur-2xl" />
-                <div className="relative bg-white/5 rounded-3xl p-2 border border-white/10">
-                  <div className="relative aspect-square rounded-2xl overflow-hidden bg-vigor-silver-900">
-                    <Image
-                      src="/images/spa-capsule-hero-opt.jpg"
-                      alt="Delight Spa Capsule"
-                      fill
-                      sizes="(max-width: 768px) 100vw, 400px"
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </FadeIn>
           </div>
         </div>
       </section>
