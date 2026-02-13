@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Cpu, User, Award, Shield, Heart, TrendingUp } from 'lucide-react'
+import { Cpu, User, Award, Shield, Heart, TrendingUp, Star, FlaskConical } from 'lucide-react'
 import { FadeIn, StaggerContainer, StaggerItem } from './motion'
 import { whyChooseUs } from '@/lib/constants'
 import { Badge } from '@/components/ui/badge'
@@ -78,6 +78,19 @@ export default function WhyChooseUs() {
             </StaggerItem>
           ))}
         </StaggerContainer>
+
+        <FadeIn delay={0.5}>
+          <div className="flex flex-wrap items-center justify-center gap-6 mt-14 pt-10 border-t border-white/[0.06]">
+            <div className="flex items-center gap-2.5 text-vigor-silver-400">
+              <Star className="w-5 h-5 text-vigor-orange-400" />
+              <span className="font-body text-sm font-medium">Satisfaction Guaranteed</span>
+            </div>
+            <div className="flex items-center gap-2.5 text-vigor-silver-400">
+              <FlaskConical className="w-5 h-5 text-vigor-orange-400" />
+              <span className="font-body text-sm font-medium">Science-Backed</span>
+            </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   )
