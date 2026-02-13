@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, ArrowUpRight } from 'lucide-react'
 import { siteConfig, services } from '@/lib/constants'
+import { Separator } from '@/components/ui/separator'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -24,9 +25,9 @@ export default function Footer() {
               <Image
                 src="/images/logo-light.png"
                 alt="VIGOR The Wellness Spa"
-                width={160}
-                height={60}
-                className="h-14 w-auto"
+                width={200}
+                height={70}
+                className="h-16 w-auto"
               />
             </Link>
             <p className="font-body text-vigor-silver-400 text-sm leading-relaxed">
@@ -60,7 +61,7 @@ export default function Footer() {
 
           {/* Services Column */}
           <div className="space-y-6">
-            <h4 className="font-heading text-xl text-white">Our Services</h4>
+            <h4 className="font-heading text-2xl text-white font-semibold">Our Services</h4>
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service.id}>
@@ -78,7 +79,7 @@ export default function Footer() {
 
           {/* Quick Links Column */}
           <div className="space-y-6">
-            <h4 className="font-heading text-xl text-white">Quick Links</h4>
+            <h4 className="font-heading text-2xl text-white font-semibold">Quick Links</h4>
             <ul className="space-y-3">
               {[
                 { name: 'About Us', href: '/about' },
@@ -101,7 +102,7 @@ export default function Footer() {
 
           {/* Contact Column */}
           <div className="space-y-6">
-            <h4 className="font-heading text-xl text-white">Contact Us</h4>
+            <h4 className="font-heading text-2xl text-white font-semibold">Contact Us</h4>
             <ul className="space-y-4">
               <li>
                 <a
@@ -149,7 +150,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="py-6 border-t border-white/10">
+        <Separator className="bg-white/10" />
+        <div className="py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
             <p className="font-body text-xs text-vigor-silver-500">
               © {currentYear} VIGOR The Wellness Spa. All rights reserved.

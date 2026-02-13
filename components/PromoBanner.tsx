@@ -2,10 +2,12 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Sparkles, Calendar, Clock, Gift, ArrowRight, X } from 'lucide-react'
+import { Sparkles, Calendar, Clock, Gift, ArrowRight } from 'lucide-react'
 import { useState } from 'react'
 import { FadeIn, StaggerContainer, StaggerItem } from './motion'
 import { promo } from '@/lib/constants'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 
 export default function PromoBanner() {
   const [isVisible, setIsVisible] = useState(true)
@@ -14,9 +16,7 @@ export default function PromoBanner() {
 
   return (
     <section className="relative py-20 lg:py-28 overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-vigor-orange-600 via-vigor-orange-500 to-vigor-teal-500">
-        {/* Animated Pattern */}
         <motion.div
           animate={{
             backgroundPosition: ['0% 0%', '100% 100%'],
@@ -32,31 +32,29 @@ export default function PromoBanner() {
             backgroundSize: '30px 30px',
           }}
         />
-        
-        {/* Glow Effects */}
+
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-vigor-teal-400/20 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-12">
           <FadeIn>
             <motion.div
               initial={{ scale: 0.9 }}
               animate={{ scale: [0.9, 1.05, 1] }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/20 backdrop-blur-sm rounded-full mb-6"
+              className="inline-block"
             >
-              <Sparkles className="w-5 h-5 text-white" />
-              <span className="font-body font-semibold text-white uppercase tracking-wider text-sm">
+              <Badge variant="glow" className="gap-2 px-5 py-2.5 text-sm uppercase tracking-wider">
+                <Sparkles className="w-4 h-4" />
                 Limited Time Offer
-              </span>
+              </Badge>
             </motion.div>
           </FadeIn>
 
           <FadeIn delay={0.1}>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-4">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-4 mt-6">
               {promo.title}
             </h2>
           </FadeIn>
@@ -75,11 +73,9 @@ export default function PromoBanner() {
           </FadeIn>
         </div>
 
-        {/* Offer Card */}
         <FadeIn delay={0.3}>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-8 md:p-12">
-              {/* Price Highlight */}
+            <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-8 md:p-12 shadow-2xl">
               <div className="text-center mb-10">
                 <motion.div
                   animate={{ scale: [1, 1.02, 1] }}
@@ -96,29 +92,26 @@ export default function PromoBanner() {
                 </motion.div>
               </div>
 
-              {/* Services Grid */}
               <StaggerContainer className="grid md:grid-cols-3 gap-6 mb-10" staggerDelay={0.1}>
-                {promo.services.map((service, index) => (
+                {promo.services.map((service) => (
                   <StaggerItem key={service.name}>
                     <motion.div
-                      whileHover={{ scale: 1.02, y: -4 }}
-                      className="bg-white/10 rounded-2xl p-6 text-center border border-white/10 hover:border-white/30 transition-colors"
+                      whileHover={{ scale: 1.03, y: -4 }}
+                      className="bg-white/10 rounded-2xl p-6 text-center border border-white/10 hover:border-white/30 hover:bg-white/15 transition-all duration-300 backdrop-blur-sm"
                     >
                       <h4 className="font-heading text-xl text-white mb-2">{service.name}</h4>
-                      <p className="font-body text-sm text-white/70">{service.tagline}</p>
-                      <Link
-                        href="/contact#booking"
-                        className="inline-flex items-center gap-2 mt-4 px-5 py-2.5 bg-white text-vigor-orange-600 font-body font-semibold text-sm rounded-full hover:bg-white/90 transition-colors"
-                      >
-                        Book Now
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
+                      <p className="font-body text-sm text-white/70 mb-4">{service.tagline}</p>
+                      <Button asChild size="sm" className="bg-white text-vigor-orange-600 hover:bg-white/90 hover:shadow-lg rounded-full">
+                        <Link href="/contact#booking">
+                          Book Now
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </Link>
+                      </Button>
                     </motion.div>
                   </StaggerItem>
                 ))}
               </StaggerContainer>
 
-              {/* Details */}
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-white/5 rounded-xl p-5 border border-white/10">
                   <p className="font-body text-white/80 text-sm">
@@ -138,19 +131,18 @@ export default function PromoBanner() {
                 </div>
               </div>
 
-              {/* CTA */}
               <div className="text-center">
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
+                  className="inline-block"
                 >
-                  <Link
-                    href="/contact#booking"
-                    className="inline-flex items-center gap-3 px-10 py-5 bg-white text-vigor-orange-600 font-body font-bold text-lg rounded-full hover:shadow-2xl transition-all duration-300"
-                  >
-                    <span>Claim Your $99 Package</span>
-                    <ArrowRight className="w-5 h-5" />
-                  </Link>
+                  <Button asChild size="lg" className="bg-white text-vigor-orange-600 hover:bg-white/90 hover:shadow-2xl font-bold text-lg px-10 py-5 rounded-full">
+                    <Link href="/contact#booking">
+                      Claim Your $99 Package
+                      <ArrowRight className="w-5 h-5 ml-3" />
+                    </Link>
+                  </Button>
                 </motion.div>
                 <p className="mt-4 font-body text-sm text-white/70 uppercase tracking-wider">
                   {promo.note}

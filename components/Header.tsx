@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ChevronDown, Phone } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { navigation, siteConfig } from '@/lib/constants'
+import { Button } from '@/components/ui/button'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -51,9 +52,12 @@ export default function Header() {
                 <Image
                   src="/images/logo.png"
                   alt="VIGOR The Wellness Spa"
-                  width={140}
-                  height={50}
-                  className="h-12 w-auto"
+                  width={200}
+                  height={70}
+                  className={cn(
+                    'h-16 lg:h-20 w-auto transition-all duration-500',
+                    isScrolled && 'drop-shadow-md'
+                  )}
                   priority
                 />
               </motion.div>
@@ -133,12 +137,11 @@ export default function Header() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Link
-                  href="/contact#booking"
-                  className="btn-primary shimmer"
-                >
-                  <span>Book Now</span>
-                </Link>
+                <Button asChild>
+                  <Link href="/contact#booking">
+                    Book Now
+                  </Link>
+                </Button>
               </motion.div>
             </div>
 
@@ -234,13 +237,11 @@ export default function Header() {
                     <Phone className="w-5 h-5" />
                     {siteConfig.phone}
                   </a>
-                  <Link
-                    href="/contact#booking"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="btn-primary w-full text-center"
-                  >
-                    <span>Book Now</span>
-                  </Link>
+                  <Button asChild className="w-full">
+                    <Link href="/contact#booking" onClick={() => setIsMobileMenuOpen(false)}>
+                      Book Now
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </motion.div>
