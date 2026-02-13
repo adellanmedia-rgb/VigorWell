@@ -239,16 +239,13 @@ export default function CryoContent() {
     <>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-vigor-dark overflow-hidden">
-        <Image
-          src="/images/cryo-hero.jpg"
+        <img
+          src="/images/cryo-hero-opt.jpg"
           alt="Cryo bodysculpting treatment"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-50"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/85 to-vigor-dark/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/30" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -300,7 +297,7 @@ export default function CryoContent() {
                 <div className="relative bg-white/5 rounded-3xl p-2 border border-white/10">
                   <div className="relative aspect-square rounded-2xl overflow-hidden bg-vigor-silver-900">
                     <Image
-                      src="/images/cryo-hero.jpg"
+                      src="/images/cryo-hero-opt.jpg"
                       alt="Cryo Bodysculpting Treatment"
                       fill
                       sizes="(max-width: 768px) 100vw, 400px"
