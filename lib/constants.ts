@@ -174,11 +174,7 @@ export const reviews = [
 ]
 
 export const trustBadges = [
-  { name: 'Licensed', icon: 'badge-check' },
-  { name: 'Certified Therapists', icon: 'award' },
-  { name: 'FDA Cleared Equipment', icon: 'shield-check' },
   { name: 'Satisfaction Guaranteed', icon: 'star' },
-  { name: 'Private Treatment Rooms', icon: 'lock' },
   { name: 'Science-Backed', icon: 'beaker' },
 ]
 
