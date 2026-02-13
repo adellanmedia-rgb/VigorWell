@@ -254,7 +254,7 @@ export default function BrainMappingContent() {
                 <div className="flex flex-wrap gap-4">
                   <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                     <Link href="/contact#booking" className="btn-primary">
-                      <span>Book Consultation</span>
+                      <span>Book Your Session</span>
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </Link>
                   </motion.div>
