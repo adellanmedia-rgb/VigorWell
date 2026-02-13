@@ -114,7 +114,9 @@
 
   .gradient-text {
     @apply bg-gradient-to-r from-vigor-teal-400 via-vigor-orange-500 to-vigor-orange-600 
-           bg-clip-text text-transparent;
+           bg-clip-text text-transparent pb-1 leading-[1.15];
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
 
   .glass-card {
