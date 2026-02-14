@@ -43,7 +43,7 @@ export default function Accordion({ items, allowMultiple = false, className }: A
               onClick={() => toggleItem(item.id)}
               className="w-full flex items-center justify-between p-6 text-left hover:bg-vigor-silver-50 transition-colors"
             >
-              <span className="font-heading text-lg text-vigor-silver-800 pr-4">
+              <span className="font-heading text-lg font-semibold text-vigor-silver-800 pr-4">
                 {item.title}
               </span>
               <motion.div
