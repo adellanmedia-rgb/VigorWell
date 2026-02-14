@@ -95,10 +95,12 @@ export default function Hero() {
             <div className="flex items-center gap-8 pt-4">
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div
+                  {['/images/avatar-1_1.jpg', '/images/avatar-1_2.jpg', '/images/avatar-1_3.jpg', '/images/avatar-1_4.jpg'].map((src, i) => (
+                    <img
                       key={i}
-                      className="w-8 h-8 rounded-full bg-gradient-to-br from-vigor-teal-400 to-vigor-orange-400 border-2 border-vigor-dark"
+                      src={src}
+                      alt="Happy client"
+                      className="w-8 h-8 rounded-full object-cover border-2 border-vigor-dark"
                     />
                   ))}
                 </div>
