@@ -22,7 +22,7 @@ export default function BookingPage() {
           <p className="text-body text-vigor-silver-400 max-w-2xl mx-auto">
             Select your preferred service, date, and time below.
             Questions? Call us at{' '}
-            <a href={`tel:${siteConfig.phone}`} className="text-vigor-orange-400 hover:text-vigor-orange-300 transition-colors">
+            <a href={`tel:${siteConfig.phone}`} className="text-vigor-orange-400 hover:text-vigor-orange-300 transition-colors whitespace-nowrap">
               {siteConfig.phone}
             </a>
           </p>
