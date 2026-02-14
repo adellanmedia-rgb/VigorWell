@@ -45,24 +45,26 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/70 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/30" />
         
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <FadeIn>
-            <span className="inline-block font-body text-sm font-semibold text-vigor-orange-400 uppercase tracking-widest mb-4">
-              Our Story
-            </span>
-          </FadeIn>
-          <FadeIn delay={0.1}>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-6">
-              About VIGOR
-            </h1>
-          </FadeIn>
-          <FadeIn delay={0.2}>
-            <p className="text-body text-vigor-silver-300 max-w-2xl mx-auto">
-              VIGOR The Wellness Spa was founded with a simple yet powerful vision: to bring 
-              cutting-edge, science-backed wellness treatments to Las Vegas in a luxurious, 
-              welcoming environment.
-            </p>
-          </FadeIn>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <FadeIn>
+              <span className="inline-block font-body text-sm font-semibold text-vigor-orange-400 uppercase tracking-widest mb-4">
+                Our Story
+              </span>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-4">
+                About VIGOR
+              </h1>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <p className="text-body text-vigor-silver-300">
+                VIGOR The Wellness Spa was founded with a simple yet powerful vision: to bring 
+                cutting-edge, science-backed wellness treatments to Las Vegas in a luxurious, 
+                welcoming environment.
+              </p>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
