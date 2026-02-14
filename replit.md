@@ -18,6 +18,7 @@ app/
   page.tsx            - Homepage with all sections
   globals.css         - Global styles, CSS variables, utility classes
   about/              - About page
+  booking/            - Booking page (SimplyBook.me iframe embed)
   contact/            - Contact page
   faq/                - FAQ page
   services/           - Services pages
@@ -50,7 +51,14 @@ public/images/        - Logo and service images
 - Dev server runs on port 5000: `npm run dev`
 - All hosts allowed for Replit preview compatibility
 
+## Booking Integration
+- **Platform**: SimplyBook.me (vigorwellnessspa.simplybook.me)
+- **Embed**: iframe at /booking page loads full SimplyBook.me booking calendar
+- **All booking buttons site-wide link to /booking** (Header, Hero, CTAs, service pages, promo banner, footer)
+- Customers stay on the VIGOR site while booking
+
 ## Recent Changes
+- Feb 2026: Integrated SimplyBook.me booking system at /booking, linked all booking buttons site-wide
 - Feb 2026: Added shadcn/ui components, redesigned all homepage sections
 - Feb 2026: Made logo transparent, larger in header/footer
 - Feb 2026: Added stock images for hero and brain mapping service

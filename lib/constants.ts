@@ -39,6 +39,7 @@ export const navigation = [
   { name: 'About', href: '/about' },
   { name: 'FAQ', href: '/faq' },
   { name: 'Contact', href: '/contact' },
+  { name: 'Book Now', href: '/booking' },
 ]
 
 export const promo = {

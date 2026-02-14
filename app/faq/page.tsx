@@ -83,7 +83,7 @@ export default function FAQPage() {
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
-                href="/contact#booking"
+                href="/booking"
                 className="btn-secondary"
               >
                 Book a Consultation

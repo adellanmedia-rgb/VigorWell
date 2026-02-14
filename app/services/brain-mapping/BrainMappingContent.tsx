@@ -253,7 +253,7 @@ export default function BrainMappingContent() {
               <FadeIn delay={0.4}>
                 <div className="flex flex-wrap gap-4">
                   <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                    <Link href="/contact#booking" className="btn-primary">
+                    <Link href="/booking" className="btn-primary">
                       <span>Book Your Session</span>
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </Link>
@@ -313,7 +313,7 @@ export default function BrainMappingContent() {
           <FadeIn delay={0.2}>
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="inline-block">
               <Link
-                href="/contact#booking"
+                href="/booking"
                 className="inline-flex items-center gap-3 px-10 py-5 bg-white text-vigor-orange-600 font-body font-bold text-lg rounded-full hover:shadow-2xl transition-all"
               >
                 <span>Schedule Your Brain Map</span>

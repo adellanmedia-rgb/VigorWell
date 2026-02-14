@@ -90,7 +90,7 @@ export default function PromoBanner() {
                       <h4 className="font-heading text-xl text-white mb-2">{service.name}</h4>
                       <p className="font-body text-sm text-vigor-silver-400 mb-5">{service.tagline}</p>
                       <Button asChild size="sm" className="w-full rounded-full">
-                        <Link href="/contact#booking" className="gap-2">
+                        <Link href="/booking" className="gap-2">
                           Book Now
                           <ArrowRight className="w-4 h-4" />
                         </Link>
@@ -126,7 +126,7 @@ export default function PromoBanner() {
                   className="inline-block"
                 >
                   <Button asChild size="lg" className="font-bold text-lg px-10 py-6 rounded-full shadow-[0_0_30px_rgba(249,115,22,0.3)]">
-                    <Link href="/contact#booking" className="gap-3">
+                    <Link href="/booking" className="gap-3">
                       Claim Your $99 Package
                       <ArrowRight className="w-5 h-5" />
                     </Link>

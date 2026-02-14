@@ -71,7 +71,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.98 }}
               >
                 <Button asChild size="lg">
-                  <Link href="/contact#booking" className="gap-3">
+                  <Link href="/booking" className="gap-3">
                     <span>Book Your Session</span>
                     <ArrowRight className="w-5 h-5" />
                   </Link>

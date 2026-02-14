@@ -119,7 +119,7 @@ export default function ServicesPage() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <Link
-              href="/contact#booking"
+              href="/booking"
               className="btn-primary inline-flex items-center gap-2"
             >
               <span>Schedule Consultation</span>

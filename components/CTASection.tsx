@@ -47,7 +47,7 @@ export default function CTASection() {
                 className="inline-block"
               >
                 <Button asChild size="lg" className="group text-base px-10 py-5">
-                  <Link href="/contact#booking">
+                  <Link href="/booking">
                     Book Your Consultation
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Link>

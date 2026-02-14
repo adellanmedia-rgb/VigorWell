@@ -139,7 +139,7 @@ export default function Header() {
                 whileTap={{ scale: 0.98 }}
               >
                 <Button asChild>
-                  <Link href="/contact#booking">
+                  <Link href="/booking">
                     Book Now
                   </Link>
                 </Button>
@@ -242,7 +242,7 @@ export default function Header() {
                     {siteConfig.phone}
                   </a>
                   <Button asChild className="w-full">
-                    <Link href="/contact#booking" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Link href="/booking" onClick={() => setIsMobileMenuOpen(false)}>
                       Book Now
                     </Link>
                   </Button>

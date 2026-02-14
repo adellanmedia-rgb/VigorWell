@@ -85,7 +85,7 @@ export default function Footer() {
                 { name: 'About Us', href: '/about' },
                 { name: 'FAQ', href: '/faq' },
                 { name: 'Contact', href: '/contact' },
-                { name: 'Book Appointment', href: '/contact#booking' },
+                { name: 'Book Appointment', href: '/booking' },
               ].map((link) => (
                 <li key={link.name}>
                   <Link

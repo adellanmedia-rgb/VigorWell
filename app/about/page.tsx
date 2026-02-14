@@ -208,7 +208,7 @@ export default function AboutPage() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <Link
-              href="/contact#booking"
+              href="/booking"
               className="inline-flex items-center gap-3 px-10 py-5 bg-white text-vigor-orange-600 font-body font-bold text-lg rounded-full hover:shadow-2xl transition-all"
             >
               <span>Book Your First Session</span>
