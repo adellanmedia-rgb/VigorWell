@@ -37,51 +37,32 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-vigor-dark overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-vigor-teal-900/20 via-vigor-dark to-vigor-orange-900/20" />
+        <img
+          src="/images/about-hero.jpg"
+          alt="Calming wellness texture"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/30" />
         
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <FadeIn>
-                <span className="inline-block font-body text-sm font-semibold text-vigor-orange-400 uppercase tracking-widest mb-4">
-                  Our Story
-                </span>
-              </FadeIn>
-              <FadeIn delay={0.1}>
-                <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-6">
-                  About VIGOR
-                </h1>
-              </FadeIn>
-              <FadeIn delay={0.2}>
-                <p className="text-body text-vigor-silver-400 mb-6">
-                  VIGOR The Wellness Spa was founded with a simple yet powerful vision: to bring 
-                  cutting-edge, science-backed wellness treatments to Las Vegas in a luxurious, 
-                  welcoming environment.
-                </p>
-                <p className="text-body text-vigor-silver-400">
-                  We believe that true wellness encompasses both mind and body. That's why we've 
-                  carefully curated a selection of transformative treatments that address cognitive 
-                  performance, physical wellness, and deep relaxation.
-                </p>
-              </FadeIn>
-            </div>
-
-            <FadeIn delay={0.3} direction="left" className="hidden lg:block">
-              <div className="relative aspect-square max-w-md mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-br from-vigor-teal-500/20 to-vigor-orange-500/20 rounded-3xl blur-2xl" />
-                <div className="relative bg-white/5 rounded-3xl p-2 border border-white/10">
-                  <div className="aspect-square rounded-2xl overflow-hidden bg-vigor-silver-900">
-                    <Image
-                      src="/images/about-hero.jpg"
-                      alt="VIGOR Wellness Spa Interior"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </FadeIn>
-          </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+          <FadeIn>
+            <span className="inline-block font-body text-sm font-semibold text-vigor-orange-400 uppercase tracking-widest mb-4">
+              Our Story
+            </span>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-6">
+              About VIGOR
+            </h1>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <p className="text-body text-vigor-silver-300 max-w-2xl mx-auto">
+              VIGOR The Wellness Spa was founded with a simple yet powerful vision: to bring 
+              cutting-edge, science-backed wellness treatments to Las Vegas in a luxurious, 
+              welcoming environment.
+            </p>
+          </FadeIn>
         </div>
       </section>
 
