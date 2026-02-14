@@ -120,7 +120,7 @@ export default function Hero() {
                   </svg>
                 ))}
                 <span className="font-body text-sm text-vigor-silver-400 ml-1">
-                  5.0 Rating
+                  4.8 Rating
                 </span>
               </div>
             </div>
