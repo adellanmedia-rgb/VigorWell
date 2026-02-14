@@ -42,7 +42,7 @@ export default function FAQPage() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           {faqs.map((category, index) => (
             <FadeIn key={category.category} delay={index * 0.1}>
-              <div className="mb-16 mt-4 last:mb-0 first:mt-0">
+              <div className="mb-20 last:mb-0">
                 <h2 className="heading-card text-vigor-silver-900 mb-8 pb-4 border-b border-vigor-silver-200">
                   {category.category}
                 </h2>
