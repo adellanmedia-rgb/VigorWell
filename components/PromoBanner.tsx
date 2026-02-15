@@ -282,7 +282,11 @@ export default function PromoBanner() {
                           <Check className="w-5 h-5 text-vigor-orange-400" />
                         </div>
                         <h4 className="font-heading text-xl text-white mb-2">{service.name}</h4>
-                        <p className="font-body text-sm text-vigor-silver-400">{service.tagline}</p>
+                        <p className="font-body text-sm text-vigor-silver-400 mb-4">{service.tagline}</p>
+                        <Link href="/booking" className="inline-flex items-center gap-1.5 px-4 py-2 bg-vigor-orange-500/20 hover:bg-vigor-orange-500/30 border border-vigor-orange-500/40 rounded-full text-vigor-orange-400 hover:text-vigor-orange-300 font-body text-sm font-semibold transition-all duration-300">
+                          Book Now
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
                       </motion.div>
                     </StaggerItem>
                   ))}

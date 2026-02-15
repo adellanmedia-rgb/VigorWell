@@ -70,7 +70,7 @@ export const promo = {
     },
   ],
   howItWorks: {
-    intro: 'We are officially opening our new Summerlin specialty wellness studio — an intimate, high-performance space focused on three powerful services: Cryo Bodysculpting, Spa Capsule, and Brain Mapping.',
+    intro: 'We are officially opening our new Summerlin specialty wellness studio — an intimate, high-performance space focused on three powerful services: GLYPTO Cryo Bodysculpting, Delight Spa Capsules (2 sessions), and Brain Mapping / Neuro-PT.',
     eventDetails: 'To celebrate our launch, we\'re offering all three services for just $99 total during our Grand Opening Event.',
     steps: [
       'Reserve your time slot with a $49 deposit.',
