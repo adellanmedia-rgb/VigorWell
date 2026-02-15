@@ -182,7 +182,7 @@ export default function PromoBanner() {
                       $99
                     </motion.span>
                     <div className="text-left">
-                      <p className="font-body text-vigor-silver-500 line-through text-lg">{promo.regularPrice} Value</p>
+                      <p className="font-body text-vigor-silver-300 line-through text-xl font-bold">{promo.regularPrice} Value</p>
                       <p className="font-body text-vigor-teal-400 font-bold text-lg">Save over 80%</p>
                     </div>
                   </div>

@@ -62,7 +62,7 @@ export default function BookingPageContent() {
           <div className="text-center mb-10">
             <h2 className="font-heading text-2xl md:text-3xl text-white mb-2">How It Works</h2>
             <p className="font-body text-vigor-silver-400">
-              All 3 services for just <span className="text-white font-bold">$99</span> <span className="text-vigor-silver-500 line-through text-sm">~{promo.regularPrice} value</span>
+              All 3 services for just <span className="text-white font-bold">$99</span> <span className="text-vigor-silver-300 line-through text-base font-bold">~{promo.regularPrice} value</span>
             </p>
           </div>
 
