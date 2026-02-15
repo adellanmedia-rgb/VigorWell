@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ChevronDown, Phone } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -49,16 +48,21 @@ export default function Header() {
                 whileTap={{ scale: 0.98 }}
                 className="relative"
               >
-                <Image
-                  src="/images/logo.png"
+                <img
+                  src="/images/LOGO-WEB-VIGOR-WHITE-TAGLINE-04-05.svg"
                   alt="VIGOR The Wellness Spa"
-                  width={200}
-                  height={70}
                   className={cn(
-                    'h-16 lg:h-20 w-auto transition-all duration-500',
-                    isScrolled && 'drop-shadow-md'
+                    'h-20 lg:h-28 w-auto transition-all duration-500 absolute inset-0',
+                    isScrolled ? 'opacity-0' : 'opacity-100'
                   )}
-                  priority
+                />
+                <img
+                  src="/images/LOGO-WEB-VIGOR-BLACK-TAGLINE-04.svg"
+                  alt="VIGOR The Wellness Spa"
+                  className={cn(
+                    'h-20 lg:h-28 w-auto transition-all duration-500',
+                    isScrolled ? 'opacity-100' : 'opacity-0'
+                  )}
                 />
               </motion.div>
             </Link>

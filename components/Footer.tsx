@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, ArrowUpRight } from 'lucide-react'
 import { siteConfig, services } from '@/lib/constants'
@@ -22,12 +21,10 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1 space-y-6">
             <Link href="/" className="inline-block">
-              <Image
-                src="/images/logo-light.png"
+              <img
+                src="/images/LOGO-WEB-VIGOR-WHITE-TAGLINE-04-05.svg"
                 alt="VIGOR The Wellness Spa"
-                width={200}
-                height={70}
-                className="h-16 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
             <p className="font-body text-vigor-silver-400 text-sm leading-relaxed">
