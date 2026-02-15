@@ -43,29 +43,43 @@ export const navigation = [
 
 export const promo = {
   title: 'Spring Wellness Spectacular',
-  dates: 'March 5-7, 2026',
-  days: 'Thursday, Friday & Saturday',
-  time: '10 AM - 4 PM',
-  offer: 'Get All 3 Services for $99',
-  regularPrice: '$575',
-  deposit: '$49',
-  balanceDue: '$50',
-  charity: '15% of proceeds donated to Bonner Elementary',
+  subtitle: 'Grand Opening Event — Summerlin Specialty Wellness Studio',
+  dates: 'March 5th – 7th',
+  daysOnly: '3 DAYS ONLY',
+  time: '10:00 AM – 6:00 PM',
+  offer: 'All 3 Services for Just $99',
+  regularPrice: '$580',
+  deposit: '49',
+  balanceDue: '50',
+  charity: '15% of this event\'s proceeds will go to Bonner Elementary School',
   note: 'NO WALK-INS • APPOINTMENTS ONLY',
+  limitedSlots: 'Limited Slots Available',
+  preRegistration: 'Pre-registration Required',
   services: [
     {
-      name: 'Cryo Bodysculpting',
+      name: 'GLYPTO Cryo Bodysculpting',
       tagline: 'Freeze away stubborn fat',
     },
     {
-      name: 'Spa Capsule',
+      name: 'Delight Spa Capsules (2 Sessions)',
       tagline: 'Detox & skin softening',
     },
     {
-      name: 'Brain Mapping',
+      name: 'Brain Mapping / Neuro-PT',
       tagline: 'Enhance cognitive function',
     },
   ],
+  howItWorks: {
+    intro: 'We are officially opening our new Summerlin specialty wellness studio — an intimate, high-performance space focused on three powerful services: GLYPTO Cryo Bodysculpting, Delight Spa Capsules (2 sessions), and Brain Mapping / Neuro-PT.',
+    eventDetails: 'To celebrate our launch, we\'re offering all three services for just $99 total during our Grand Opening Event.',
+    steps: [
+      'Reserve your time slot with a $49 deposit.',
+      'Pay the remaining $50 when you arrive.',
+      'After completing your first session, you\'ll schedule the remaining two services.',
+    ],
+    noHiddenFees: 'No hidden fees. Just $99 total for all three services — a package normally valued at approximately $580.',
+    donation: '15% of this event\'s proceeds will go to Bonner Elementary School.',
+  },
 }
 
 export const services = [
