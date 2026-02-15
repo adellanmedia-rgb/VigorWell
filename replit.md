@@ -44,7 +44,7 @@ public/images/        - Logo and service images
 
 ## Design System
 - **Colors**: vigor-orange (brand), vigor-teal (accent), vigor-silver (neutral), vigor-dark, vigor-cream
-- **Logo**: Transparent PNG with flame icon and metallic text
+- **Logo**: SVG logos with flame icon and metallic text — two versions: white-tagline (for dark backgrounds) and black-tagline (for white backgrounds). Header swaps between them based on scroll state.
 - **Shadows**: vigor, vigor-lg, soft, soft-lg custom shadows
 
 ## Development
@@ -60,6 +60,6 @@ public/images/        - Logo and service images
 ## Recent Changes
 - Feb 2026: Integrated SimplyBook.me booking system at /booking, linked all booking buttons site-wide
 - Feb 2026: Added shadcn/ui components, redesigned all homepage sections
-- Feb 2026: Made logo transparent, larger in header/footer
+- Feb 2026: Upgraded to SVG logos with scroll-based swap (white-tagline on dark header, black-tagline on scrolled white header), increased logo size
 - Feb 2026: Added stock images for hero and brain mapping service
 - Feb 2026: Improved hero with full-bleed background image and gradient overlays
