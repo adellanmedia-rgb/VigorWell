@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function BookingPage() {
   return (
     <>
-      <section className="relative pt-32 pb-8 lg:pt-40 lg:pb-12 bg-vigor-dark overflow-hidden">
+      <section className="relative pt-40 pb-8 lg:pt-52 lg:pb-12 bg-vigor-dark overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-vigor-teal-900/20 via-vigor-dark to-vigor-orange-900/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <span className="inline-block font-body text-sm font-semibold text-vigor-orange-400 uppercase tracking-widest mb-4">

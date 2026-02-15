@@ -270,7 +270,7 @@ export default function SpaCapsuleContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-vigor-dark overflow-hidden">
+      <section className="relative pt-40 pb-20 lg:pt-52 lg:pb-28 bg-vigor-dark overflow-hidden">
         <img
           src="/images/spa-capsule-hero-opt.jpg"
           alt="Delight Spa Capsule pods"
