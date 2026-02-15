@@ -39,3 +39,6 @@ deploymentTarget = "autoscale"
 run = ["npm", "run", "start"]
 build = ["npm", "run", "build"]
 publicDir = "public"
+
+[objectStorage]
+defaultBucketID = "replit-objstore-0c501ceb-c7d5-4e08-9ea8-89d561c48002"
