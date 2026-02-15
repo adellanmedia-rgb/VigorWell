@@ -49,6 +49,10 @@ export default function BookingPageContent() {
 
       <section className="py-8 lg:py-12 bg-vigor-cream">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="text-center mb-6">
+            <h2 className="font-heading text-2xl md:text-3xl text-vigor-dark mb-1">Ready to Book?</h2>
+            <p className="font-body text-vigor-silver-600 text-sm">Select your service below to get started</p>
+          </div>
           <BookingWidget />
         </div>
       </section>
