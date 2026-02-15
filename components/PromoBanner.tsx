@@ -108,15 +108,15 @@ export default function PromoBanner() {
     <>
       <section className="relative py-20 lg:py-28 overflow-hidden bg-vigor-dark">
         <div className="absolute inset-0 bg-gradient-to-br from-vigor-dark via-[#1a1a2e] to-vigor-dark" />
-        <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/10 via-transparent to-emerald-950/5 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/15 via-transparent to-emerald-950/10 pointer-events-none" />
 
         <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-vigor-orange-500/20 rounded-full blur-[120px]" />
         <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-vigor-teal-500/15 rounded-full blur-[100px]" />
         <div className="absolute top-1/2 right-0 w-[300px] h-[300px] bg-vigor-orange-500/10 rounded-full blur-[80px]" />
-        <div className="absolute top-0 left-0 w-[250px] h-[250px] bg-emerald-500/8 rounded-full blur-[100px]" />
-        <div className="absolute bottom-0 right-0 w-[200px] h-[200px] bg-pink-500/5 rounded-full blur-[80px]" />
+        <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-emerald-500/15 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 right-0 w-[250px] h-[250px] bg-pink-500/10 rounded-full blur-[80px]" />
 
-        <svg className="absolute top-6 left-6 w-40 h-56 md:w-52 md:h-72 opacity-[0.08] pointer-events-none" viewBox="0 0 160 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="absolute top-6 left-6 w-40 h-56 md:w-52 md:h-72 opacity-[0.18] pointer-events-none" viewBox="0 0 160 220" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M80 210 Q75 160 50 120 Q70 130 80 90 Q90 130 110 120 Q85 160 80 210Z" stroke="currentColor" strokeWidth="1.5" className="text-emerald-400" />
           <path d="M80 90 Q60 60 30 50 Q60 45 80 20 Q100 45 130 50 Q100 60 80 90Z" stroke="currentColor" strokeWidth="1.5" className="text-emerald-400" />
           <path d="M55 130 Q40 110 20 115 Q35 100 55 130Z" stroke="currentColor" strokeWidth="1" className="text-emerald-500" />
@@ -128,7 +128,7 @@ export default function PromoBanner() {
           <path d="M75 25 Q85 15 95 25 Q85 20 75 25Z" fill="currentColor" className="text-pink-300" opacity="0.4" />
         </svg>
 
-        <svg className="absolute bottom-6 right-6 w-40 h-56 md:w-52 md:h-72 opacity-[0.08] pointer-events-none" viewBox="0 0 160 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="absolute bottom-6 right-6 w-40 h-56 md:w-52 md:h-72 opacity-[0.18] pointer-events-none" viewBox="0 0 160 220" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M80 10 Q85 60 110 100 Q90 90 80 130 Q70 90 50 100 Q75 60 80 10Z" stroke="currentColor" strokeWidth="1.5" className="text-emerald-400" />
           <path d="M80 130 Q100 160 130 170 Q100 175 80 200 Q60 175 30 170 Q60 160 80 130Z" stroke="currentColor" strokeWidth="1.5" className="text-emerald-400" />
           <path d="M105 90 Q120 70 140 75 Q125 85 105 90Z" stroke="currentColor" strokeWidth="1" className="text-emerald-500" />
@@ -139,19 +139,19 @@ export default function PromoBanner() {
           <path d="M65 205 Q75 195 85 205 Q75 200 65 205Z" fill="currentColor" className="text-pink-300" opacity="0.4" />
         </svg>
 
-        <svg className="absolute top-1/3 left-2 w-20 h-28 opacity-[0.06] pointer-events-none hidden lg:block" viewBox="0 0 80 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="absolute top-1/3 left-2 w-20 h-28 opacity-[0.15] pointer-events-none hidden lg:block" viewBox="0 0 80 110" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M40 100 Q35 70 15 50 Q30 55 40 30 Q50 55 65 50 Q45 70 40 100Z" stroke="currentColor" strokeWidth="1.2" className="text-teal-400" />
           <circle cx="40" cy="25" r="7" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
           <circle cx="40" cy="25" r="3" fill="currentColor" className="text-orange-300" />
         </svg>
 
-        <svg className="absolute top-1/3 right-2 w-20 h-28 opacity-[0.06] pointer-events-none hidden lg:block" viewBox="0 0 80 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="absolute top-1/3 right-2 w-20 h-28 opacity-[0.15] pointer-events-none hidden lg:block" viewBox="0 0 80 110" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M40 100 Q35 70 15 50 Q30 55 40 30 Q50 55 65 50 Q45 70 40 100Z" stroke="currentColor" strokeWidth="1.2" className="text-teal-400" />
           <circle cx="40" cy="25" r="7" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
           <circle cx="40" cy="25" r="3" fill="currentColor" className="text-orange-300" />
         </svg>
 
-        <svg className="absolute bottom-1/4 left-8 w-12 h-12 opacity-[0.05] pointer-events-none hidden md:block" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="absolute bottom-1/4 left-8 w-16 h-16 opacity-[0.14] pointer-events-none hidden md:block" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="25" cy="25" r="12" stroke="currentColor" strokeWidth="1.5" className="text-pink-400" />
           <circle cx="25" cy="25" r="5" fill="currentColor" className="text-pink-400" />
           <path d="M15 15 Q25 5 35 15 Q25 10 15 15Z" fill="currentColor" className="text-pink-300" opacity="0.5" />
@@ -160,7 +160,7 @@ export default function PromoBanner() {
           <path d="M30 25 Q35 15 40 25 Q35 20 30 25Z" fill="currentColor" className="text-pink-300" opacity="0.4" />
         </svg>
 
-        <svg className="absolute top-1/4 right-12 w-12 h-12 opacity-[0.05] pointer-events-none hidden md:block" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="absolute top-1/4 right-12 w-16 h-16 opacity-[0.14] pointer-events-none hidden md:block" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="25" cy="25" r="12" stroke="currentColor" strokeWidth="1.5" className="text-pink-400" />
           <circle cx="25" cy="25" r="5" fill="currentColor" className="text-pink-400" />
           <path d="M15 15 Q25 5 35 15 Q25 10 15 15Z" fill="currentColor" className="text-pink-300" opacity="0.5" />
