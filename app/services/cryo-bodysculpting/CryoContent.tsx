@@ -344,7 +344,7 @@ export default function CryoContent() {
                 href="/booking"
                 className="inline-flex items-center gap-3 px-10 py-5 bg-white text-vigor-teal-600 font-body font-bold text-lg rounded-full hover:shadow-2xl transition-all"
               >
-                <span>Book Free Consultation</span>
+                <span>Book Your Cryo Sculpting Session</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </motion.div>
