@@ -1,7 +1,6 @@
 'use client'
 
-import { useRef } from 'react'
-import { Calendar, CreditCard, ClipboardCheck, Heart, ChevronDown } from 'lucide-react'
+import { Calendar, CreditCard, ClipboardCheck, Heart } from 'lucide-react'
 import { siteConfig, promo } from '@/lib/constants'
 import BookingWidget from './BookingWidget'
 
@@ -27,12 +26,6 @@ const steps = [
 ]
 
 export default function BookingPageContent() {
-  const bookingRef = useRef<HTMLDivElement>(null)
-
-  const scrollToBooking = () => {
-    bookingRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
-
   return (
     <>
       <section className="relative pt-40 pb-8 lg:pt-52 lg:pb-12 bg-vigor-dark overflow-hidden">
@@ -51,6 +44,12 @@ export default function BookingPageContent() {
               {siteConfig.phone}
             </a>
           </p>
+        </div>
+      </section>
+
+      <section className="py-8 lg:py-12 bg-vigor-cream">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <BookingWidget />
         </div>
       </section>
 
@@ -78,33 +77,13 @@ export default function BookingPageContent() {
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center mb-10">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
             <div className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full">
               <Heart className="w-4 h-4 text-pink-400" />
               <span className="font-body text-sm text-vigor-silver-300">{promo.charity}</span>
             </div>
             <span className="font-body text-sm text-red-400 font-bold uppercase tracking-wide">{promo.note}</span>
           </div>
-
-          <div className="text-center">
-            <button
-              onClick={scrollToBooking}
-              className="group inline-flex flex-col items-center gap-2 cursor-pointer"
-            >
-              <span className="font-body text-sm font-semibold text-vigor-orange-400 uppercase tracking-widest group-hover:text-vigor-orange-300 transition-colors">
-                Select Your Service Below to Get Started
-              </span>
-              <div className="animate-bounce">
-                <ChevronDown className="w-6 h-6 text-vigor-orange-400 group-hover:text-vigor-orange-300 transition-colors" />
-              </div>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section ref={bookingRef} className="py-8 lg:py-12 bg-vigor-cream scroll-mt-4">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <BookingWidget />
         </div>
       </section>
     </>
