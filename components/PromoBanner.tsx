@@ -116,57 +116,84 @@ export default function PromoBanner() {
         <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-emerald-500/15 rounded-full blur-[100px]" />
         <div className="absolute bottom-0 right-0 w-[250px] h-[250px] bg-pink-500/10 rounded-full blur-[80px]" />
 
-        <svg className="absolute top-6 left-6 w-40 h-56 md:w-52 md:h-72 opacity-[0.18] pointer-events-none" viewBox="0 0 160 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M80 210 Q75 160 50 120 Q70 130 80 90 Q90 130 110 120 Q85 160 80 210Z" stroke="currentColor" strokeWidth="1.5" className="text-emerald-400" />
-          <path d="M80 90 Q60 60 30 50 Q60 45 80 20 Q100 45 130 50 Q100 60 80 90Z" stroke="currentColor" strokeWidth="1.5" className="text-emerald-400" />
-          <path d="M55 130 Q40 110 20 115 Q35 100 55 130Z" stroke="currentColor" strokeWidth="1" className="text-emerald-500" />
-          <path d="M105 130 Q120 110 140 115 Q125 100 105 130Z" stroke="currentColor" strokeWidth="1" className="text-emerald-500" />
-          <circle cx="80" cy="15" r="10" stroke="currentColor" strokeWidth="1.5" className="text-pink-400" />
-          <circle cx="80" cy="15" r="4" fill="currentColor" className="text-pink-400" />
-          <path d="M70 5 Q80 -5 90 5 Q80 0 70 5Z" fill="currentColor" className="text-pink-300" opacity="0.5" />
-          <path d="M65 15 Q75 5 85 15 Q75 10 65 15Z" fill="currentColor" className="text-pink-300" opacity="0.4" />
-          <path d="M75 25 Q85 15 95 25 Q85 20 75 25Z" fill="currentColor" className="text-pink-300" opacity="0.4" />
+        <svg className="absolute top-8 left-4 w-28 h-28 md:w-40 md:h-40 opacity-[0.22] pointer-events-none" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g className="text-pink-300">
+            <path d="M50 50 Q50 30 50 15 Q58 30 50 50Z" fill="currentColor" opacity="0.7" />
+            <path d="M50 50 Q65 38 78 32 Q68 48 50 50Z" fill="currentColor" opacity="0.6" />
+            <path d="M50 50 Q68 55 78 68 Q60 62 50 50Z" fill="currentColor" opacity="0.7" />
+            <path d="M50 50 Q42 68 35 78 Q40 60 50 50Z" fill="currentColor" opacity="0.6" />
+            <path d="M50 50 Q32 42 22 35 Q38 40 50 50Z" fill="currentColor" opacity="0.7" />
+          </g>
+          <circle cx="50" cy="50" r="5" fill="#f9a8d4" />
+          <circle cx="50" cy="50" r="2.5" fill="#fbbf24" />
         </svg>
 
-        <svg className="absolute bottom-6 right-6 w-40 h-56 md:w-52 md:h-72 opacity-[0.18] pointer-events-none" viewBox="0 0 160 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M80 10 Q85 60 110 100 Q90 90 80 130 Q70 90 50 100 Q75 60 80 10Z" stroke="currentColor" strokeWidth="1.5" className="text-emerald-400" />
-          <path d="M80 130 Q100 160 130 170 Q100 175 80 200 Q60 175 30 170 Q60 160 80 130Z" stroke="currentColor" strokeWidth="1.5" className="text-emerald-400" />
-          <path d="M105 90 Q120 70 140 75 Q125 85 105 90Z" stroke="currentColor" strokeWidth="1" className="text-emerald-500" />
-          <path d="M55 90 Q40 70 20 75 Q35 85 55 90Z" stroke="currentColor" strokeWidth="1" className="text-emerald-500" />
-          <circle cx="80" cy="205" r="10" stroke="currentColor" strokeWidth="1.5" className="text-pink-400" />
-          <circle cx="80" cy="205" r="4" fill="currentColor" className="text-pink-400" />
-          <path d="M70 215 Q80 205 90 215 Q80 210 70 215Z" fill="currentColor" className="text-pink-300" opacity="0.5" />
-          <path d="M65 205 Q75 195 85 205 Q75 200 65 205Z" fill="currentColor" className="text-pink-300" opacity="0.4" />
+        <svg className="absolute top-16 left-32 md:left-44 w-16 h-16 md:w-20 md:h-20 opacity-[0.16] pointer-events-none" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g className="text-pink-200">
+            <path d="M50 50 Q48 32 50 18 Q56 32 50 50Z" fill="currentColor" opacity="0.6" />
+            <path d="M50 50 Q64 36 76 30 Q66 46 50 50Z" fill="currentColor" opacity="0.5" />
+            <path d="M50 50 Q66 56 76 70 Q58 62 50 50Z" fill="currentColor" opacity="0.6" />
+            <path d="M50 50 Q44 66 36 76 Q42 58 50 50Z" fill="currentColor" opacity="0.5" />
+            <path d="M50 50 Q34 44 24 36 Q40 42 50 50Z" fill="currentColor" opacity="0.6" />
+          </g>
+          <circle cx="50" cy="50" r="4" fill="#f9a8d4" />
+          <circle cx="50" cy="50" r="2" fill="#fbbf24" />
         </svg>
 
-        <svg className="absolute top-1/3 left-2 w-20 h-28 opacity-[0.15] pointer-events-none hidden lg:block" viewBox="0 0 80 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M40 100 Q35 70 15 50 Q30 55 40 30 Q50 55 65 50 Q45 70 40 100Z" stroke="currentColor" strokeWidth="1.2" className="text-teal-400" />
-          <circle cx="40" cy="25" r="7" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
-          <circle cx="40" cy="25" r="3" fill="currentColor" className="text-orange-300" />
+        <svg className="absolute bottom-10 right-6 w-32 h-32 md:w-44 md:h-44 opacity-[0.20] pointer-events-none" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g className="text-pink-300">
+            <path d="M50 50 Q50 30 50 15 Q58 30 50 50Z" fill="currentColor" opacity="0.7" />
+            <path d="M50 50 Q65 38 78 32 Q68 48 50 50Z" fill="currentColor" opacity="0.6" />
+            <path d="M50 50 Q68 55 78 68 Q60 62 50 50Z" fill="currentColor" opacity="0.7" />
+            <path d="M50 50 Q42 68 35 78 Q40 60 50 50Z" fill="currentColor" opacity="0.6" />
+            <path d="M50 50 Q32 42 22 35 Q38 40 50 50Z" fill="currentColor" opacity="0.7" />
+          </g>
+          <circle cx="50" cy="50" r="5" fill="#f9a8d4" />
+          <circle cx="50" cy="50" r="2.5" fill="#fbbf24" />
         </svg>
 
-        <svg className="absolute top-1/3 right-2 w-20 h-28 opacity-[0.15] pointer-events-none hidden lg:block" viewBox="0 0 80 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M40 100 Q35 70 15 50 Q30 55 40 30 Q50 55 65 50 Q45 70 40 100Z" stroke="currentColor" strokeWidth="1.2" className="text-teal-400" />
-          <circle cx="40" cy="25" r="7" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
-          <circle cx="40" cy="25" r="3" fill="currentColor" className="text-orange-300" />
+        <svg className="absolute bottom-20 right-40 md:right-52 w-14 h-14 md:w-18 md:h-18 opacity-[0.14] pointer-events-none" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g className="text-pink-200">
+            <path d="M50 50 Q48 32 50 18 Q56 32 50 50Z" fill="currentColor" opacity="0.6" />
+            <path d="M50 50 Q64 36 76 30 Q66 46 50 50Z" fill="currentColor" opacity="0.5" />
+            <path d="M50 50 Q66 56 76 70 Q58 62 50 50Z" fill="currentColor" opacity="0.6" />
+            <path d="M50 50 Q44 66 36 76 Q42 58 50 50Z" fill="currentColor" opacity="0.5" />
+            <path d="M50 50 Q34 44 24 36 Q40 42 50 50Z" fill="currentColor" opacity="0.6" />
+          </g>
+          <circle cx="50" cy="50" r="4" fill="#f9a8d4" />
+          <circle cx="50" cy="50" r="2" fill="#fbbf24" />
         </svg>
 
-        <svg className="absolute bottom-1/4 left-8 w-16 h-16 opacity-[0.14] pointer-events-none hidden md:block" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="25" cy="25" r="12" stroke="currentColor" strokeWidth="1.5" className="text-pink-400" />
-          <circle cx="25" cy="25" r="5" fill="currentColor" className="text-pink-400" />
-          <path d="M15 15 Q25 5 35 15 Q25 10 15 15Z" fill="currentColor" className="text-pink-300" opacity="0.5" />
-          <path d="M15 35 Q25 45 35 35 Q25 40 15 35Z" fill="currentColor" className="text-pink-300" opacity="0.5" />
-          <path d="M10 25 Q15 15 20 25 Q15 20 10 25Z" fill="currentColor" className="text-pink-300" opacity="0.4" />
-          <path d="M30 25 Q35 15 40 25 Q35 20 30 25Z" fill="currentColor" className="text-pink-300" opacity="0.4" />
+        <svg className="absolute top-[15%] right-[8%] w-10 h-16 opacity-[0.20] pointer-events-none rotate-[25deg]" viewBox="0 0 40 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0 Q30 15 28 35 Q20 25 12 35 Q10 15 20 0Z" fill="#fbcfe8" opacity="0.8" />
+          <path d="M15 35 Q20 55 25 35" stroke="#f9a8d4" strokeWidth="0.8" fill="none" />
         </svg>
 
-        <svg className="absolute top-1/4 right-12 w-16 h-16 opacity-[0.14] pointer-events-none hidden md:block" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="25" cy="25" r="12" stroke="currentColor" strokeWidth="1.5" className="text-pink-400" />
-          <circle cx="25" cy="25" r="5" fill="currentColor" className="text-pink-400" />
-          <path d="M15 15 Q25 5 35 15 Q25 10 15 15Z" fill="currentColor" className="text-pink-300" opacity="0.5" />
-          <path d="M15 35 Q25 45 35 35 Q25 40 15 35Z" fill="currentColor" className="text-pink-300" opacity="0.5" />
-          <path d="M10 25 Q15 15 20 25 Q15 20 10 25Z" fill="currentColor" className="text-pink-300" opacity="0.4" />
-          <path d="M30 25 Q35 15 40 25 Q35 20 30 25Z" fill="currentColor" className="text-pink-300" opacity="0.4" />
+        <svg className="absolute top-[40%] left-[5%] w-8 h-14 opacity-[0.18] pointer-events-none rotate-[-15deg] hidden md:block" viewBox="0 0 40 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0 Q30 15 28 35 Q20 25 12 35 Q10 15 20 0Z" fill="#fbcfe8" opacity="0.7" />
+          <path d="M15 35 Q20 55 25 35" stroke="#f9a8d4" strokeWidth="0.8" fill="none" />
+        </svg>
+
+        <svg className="absolute bottom-[30%] left-[12%] w-7 h-12 opacity-[0.15] pointer-events-none rotate-[45deg] hidden lg:block" viewBox="0 0 40 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0 Q30 15 28 35 Q20 25 12 35 Q10 15 20 0Z" fill="#fce7f3" opacity="0.8" />
+          <path d="M15 35 Q20 55 25 35" stroke="#f9a8d4" strokeWidth="0.8" fill="none" />
+        </svg>
+
+        <svg className="absolute top-[60%] right-[15%] w-9 h-14 opacity-[0.17] pointer-events-none rotate-[-35deg] hidden md:block" viewBox="0 0 40 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0 Q30 15 28 35 Q20 25 12 35 Q10 15 20 0Z" fill="#fbcfe8" opacity="0.7" />
+          <path d="M15 35 Q20 55 25 35" stroke="#f9a8d4" strokeWidth="0.8" fill="none" />
+        </svg>
+
+        <svg className="absolute top-[25%] left-[25%] w-6 h-10 opacity-[0.12] pointer-events-none rotate-[60deg] hidden lg:block" viewBox="0 0 40 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0 Q30 15 28 35 Q20 25 12 35 Q10 15 20 0Z" fill="#fce7f3" opacity="0.7" />
+        </svg>
+
+        <svg className="absolute bottom-[15%] right-[30%] w-7 h-11 opacity-[0.13] pointer-events-none rotate-[-50deg] hidden lg:block" viewBox="0 0 40 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0 Q30 15 28 35 Q20 25 12 35 Q10 15 20 0Z" fill="#fbcfe8" opacity="0.8" />
+        </svg>
+
+        <svg className="absolute top-[70%] left-[30%] w-5 h-8 opacity-[0.10] pointer-events-none rotate-[80deg] hidden md:block" viewBox="0 0 40 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0 Q30 15 28 35 Q20 25 12 35 Q10 15 20 0Z" fill="#fce7f3" opacity="0.7" />
         </svg>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
