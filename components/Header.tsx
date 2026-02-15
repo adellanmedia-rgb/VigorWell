@@ -49,7 +49,7 @@ export default function Header() {
                 className="relative"
               >
                 <img
-                  src="/images/LOGO-WEB-VIGOR-White-TAGLINE-1-02.svg"
+                  src="/images/real-LOGO-WEB-VIGOR-White-TAGLINE-1-05.svg"
                   alt="VIGOR The Wellness Spa"
                   className={cn(
                     'h-20 lg:h-28 w-auto transition-all duration-500 absolute inset-0',

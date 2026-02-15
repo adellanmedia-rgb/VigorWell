@@ -22,7 +22,7 @@ export default function Footer() {
           <div className="lg:col-span-1 space-y-6">
             <Link href="/" className="inline-block">
               <img
-                src="/images/LOGO-WEB-VIGOR-White-TAGLINE-1-02.svg"
+                src="/images/real-LOGO-WEB-VIGOR-White-TAGLINE-1-05.svg"
                 alt="VIGOR The Wellness Spa"
                 className="h-20 w-auto"
               />
