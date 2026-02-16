@@ -291,6 +291,7 @@ export default function PromoBanner() {
 
                 <div className="grid md:grid-cols-2 gap-5 mb-8">
                   <div className="bg-white/5 rounded-xl p-5 border border-white/8">
+                    <p className="font-heading text-vigor-orange-400 text-sm font-semibold tracking-wide uppercase mb-3">Event Promotional Pricing</p>
                     <p className="font-body text-vigor-silver-300 text-sm">
                       <span className="text-white font-semibold">${promo.deposit} deposit</span> to secure your appointment
                     </p>
