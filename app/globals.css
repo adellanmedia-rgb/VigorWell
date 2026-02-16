@@ -216,6 +216,15 @@
   .animate-delay-700 { animation-delay: 700ms; }
   .animate-delay-800 { animation-delay: 800ms; }
 
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-ticker {
+    animation: ticker 20s linear infinite;
+  }
+
   /* Gradient border */
   .gradient-border {
     @apply relative;
