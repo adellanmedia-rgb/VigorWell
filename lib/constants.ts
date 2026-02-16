@@ -46,7 +46,7 @@ export const promo = {
   subtitle: 'Grand Opening Event — Summerlin Specialty Wellness Studio',
   dates: 'March 5th – 7th',
   daysOnly: '3 DAYS ONLY',
-  time: '10:00 AM – 6:00 PM',
+  time: '10:00 AM – 4:00 PM',
   offer: 'All 3 Services for Just $99',
   regularPrice: '$580',
   deposit: '49',
