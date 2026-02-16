@@ -318,10 +318,22 @@ export default function PromoBanner() {
                     </Button>
                   </motion.div>
 
-                  <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="inline-block">
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.98 }}
+                    animate={{
+                      boxShadow: [
+                        '0 0 15px rgba(249,115,22,0.15)',
+                        '0 0 30px rgba(249,115,22,0.35)',
+                        '0 0 15px rgba(249,115,22,0.15)',
+                      ],
+                    }}
+                    transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                    className="inline-block rounded-full"
+                  >
                     <button
                       onClick={() => setShowModal(true)}
-                      className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 hover:bg-white/20 border-2 border-vigor-orange-400/60 hover:border-vigor-orange-400 text-white font-body font-bold text-lg rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(249,115,22,0.15)]"
+                      className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 hover:bg-white/20 border-2 border-vigor-orange-400/60 hover:border-vigor-orange-400 text-white font-body font-bold text-lg rounded-full transition-all duration-300"
                     >
                       <Info className="w-5 h-5 text-vigor-orange-400" />
                       How It Works
