@@ -38,3 +38,11 @@ next-env.d.ts
 .vscode/
 *.swp
 *.swo
+
+# Replit
+.replit
+replit.nix
+.cache/
+.config/
+.local/
+replit.md
