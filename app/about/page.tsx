@@ -7,6 +7,7 @@ import { FadeIn, StaggerContainer, StaggerItem } from '@/components/motion'
 export const metadata: Metadata = {
   title: 'About Us',
   description: 'Learn about VIGOR The Wellness Spa - Las Vegas\'s premier destination for holistic wellness. Our mission, values, and commitment to your wellbeing.',
+  keywords: ['about VIGOR wellness spa', 'wellness center Las Vegas', 'holistic wellness Summerlin', 'spa team Las Vegas', 'wellness mission'],
 }
 
 const values = [

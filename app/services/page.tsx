@@ -8,6 +8,7 @@ import { services } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Our Services',
   description: 'Explore VIGOR\'s holistic wellness services: Brain Mapping & Neuro-PT, Cryo Bodysculpting, and Delight Spa Capsule. Science-backed treatments in Las Vegas.',
+  keywords: ['wellness services Las Vegas', 'brain mapping', 'cryo bodysculpting', 'spa capsule treatment', 'holistic wellness Summerlin', 'non-invasive body contouring'],
 }
 
 const iconMap: Record<string, React.ReactNode> = {

@@ -8,6 +8,7 @@ import { faqs } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions',
   description: 'Find answers to common questions about VIGOR\'s wellness services including Brain Mapping, Cryo Bodysculpting, and Spa Capsule treatments.',
+  keywords: ['wellness spa FAQ', 'brain mapping questions', 'cryo bodysculpting FAQ', 'spa capsule questions', 'wellness treatment information'],
 }
 
 export default function FAQPage() {
