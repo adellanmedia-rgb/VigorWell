@@ -57,7 +57,20 @@ public/images/        - Logo and service images
 - **All booking buttons site-wide link to /booking** (Header, Hero, CTAs, service pages, promo banner, footer)
 - Customers stay on the VIGOR site while booking
 
+## SEO
+- **Page Metadata**: Every page has unique title, description, and keywords optimized for local Las Vegas/Summerlin search
+- **Structured Data**: LocalBusiness schema (Schema.org) with NAP, geo coordinates, hours, social links
+- **Open Graph / Twitter Cards**: Social sharing previews configured in root layout
+- **Sitemap**: Auto-generated at /sitemap.xml via `app/sitemap.ts` (all pages with priorities)
+- **Robots.txt**: Auto-generated via `app/robots.ts` (allows all, disallows /api/ and /_next/)
+- **llms.txt**: AI/LLM discoverability file at /llms.txt with full business info and services
+- **PromoTicker**: Scrolling Grand Opening promo bar fixed above header on all pages
+
 ## Recent Changes
+- Feb 2026: Added SEO improvements: per-page keywords, Open Graph/Twitter cards, sitemap.xml, robots.txt, llms.txt
+- Feb 2026: Added scrolling PromoTicker bar above header for Grand Opening Event
+- Feb 2026: Updated event time to 10:00 AM – 4:00 PM, added "Event Promotional Pricing" label
+- Feb 2026: Prepared project for GitHub/Vercel deployment (.gitignore updated for Replit files)
 - Feb 2026: Redesigned Spring Wellness Spectacular promo section with Grand Opening Event framing, "3 DAYS ONLY" urgency callout, "Limited Slots" / "Pre-registration Required" badges, donation highlight for Bonner Elementary, and "How It Works" modal with full event details
 - Feb 2026: Updated service names to GLYPTO Cryo Bodysculpting, Delight Spa Capsules (2 Sessions), Brain Mapping / Neuro-PT
 - Feb 2026: Adjusted hero padding on all interior pages (services, about, contact, FAQ, booking) to prevent content overlap with larger logo
