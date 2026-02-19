@@ -48,11 +48,11 @@ export default function Hero() {
           <div className="space-y-4">
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white leading-[1.05] tracking-tight">
               <motion.span className="inline-block" {...headingReveal(0.3)}>
-                Revitalize Your
+                Optimize How You
               </motion.span>
               <br />
               <motion.span className="inline-block gradient-text" {...headingReveal(0.5)}>
-                Mind and Body
+                Look, Feel and Function
               </motion.span>
             </h1>
           </div>
