@@ -3,9 +3,9 @@ export const siteConfig = {
   tagline: 'Recover ∞ Rejuvenate ∞ Perform',
   description: 'Experience holistic wellness solutions for a balanced life.',
   url: 'https://vigorlv.com',
-  email: 'info@vigorlv.com',
+  email: 'info@vigorLV.com',
   phone: '844-844-6758',
-  phoneDisplay: '844-VIGOR-LV (844-844-6758)',
+  phoneDisplay: '844-VigorLV (844-844-6758)',
   address: {
     street: '10300 W Charleston Blvd',
     suite: 'Suite 17',
