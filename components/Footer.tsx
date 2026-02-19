@@ -136,11 +136,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 font-body text-sm text-vigor-silver-400">
                 <Clock className="w-5 h-5 flex-shrink-0 mt-0.5 text-vigor-orange-500" />
-                <span>
-                  Mon - Fri: {siteConfig.hours.weekdays}<br />
-                  Sat: {siteConfig.hours.saturday}<br />
-                  Sun: {siteConfig.hours.sunday}
-                </span>
+                <span>By Appointment Only</span>
               </li>
             </ul>
           </div>
