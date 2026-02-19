@@ -345,7 +345,7 @@ export default function CryoContent() {
       </section>
 
       {/* Summary Section */}
-      <section className="pt-8 pb-16 bg-vigor-cream">
+      <section className="pt-2 pb-16 bg-vigor-cream">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <FadeIn>
             <p className="text-body text-vigor-silver-700 text-lg leading-relaxed">
