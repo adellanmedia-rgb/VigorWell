@@ -129,7 +129,7 @@ export default function Header() {
               <a
                 href={`tel:${siteConfig.phone}`}
                 className={cn(
-                  'flex items-center gap-2 font-body text-sm font-bold transition-colors',
+                  'flex items-center gap-2 font-body text-base font-bold transition-colors',
                   isScrolled ? 'text-vigor-silver-600' : 'text-white/70',
                   'hover:text-vigor-orange-400'
                 )}
