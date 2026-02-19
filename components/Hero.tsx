@@ -34,8 +34,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/80 to-vigor-dark/40" />
       <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/30" />
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 pt-24 lg:pt-32">
-        <div className="max-w-3xl space-y-8">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 pt-32 lg:pt-44">
+        <div className="max-w-4xl space-y-8">
           <motion.div {...fadeUp(0.2)}>
             <Badge variant="glow" className="gap-2 px-4 py-2 border border-white/10">
               <span className="w-2 h-2 rounded-full bg-vigor-orange-500 animate-pulse" />
@@ -46,7 +46,7 @@ export default function Hero() {
           </motion.div>
 
           <div className="space-y-4">
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white leading-[1.05] tracking-tight">
+            <h1 className="font-display text-5xl md:text-6xl lg:text-[4rem] xl:text-[5rem] text-white leading-[1.05] tracking-tight">
               <motion.span className="inline-block" {...headingReveal(0.3)}>
                 Optimize How You
               </motion.span>
