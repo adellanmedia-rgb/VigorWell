@@ -129,7 +129,7 @@ export default function Header() {
               <a
                 href={`tel:${siteConfig.phone}`}
                 className={cn(
-                  'flex items-center gap-2 font-body text-sm font-medium transition-colors',
+                  'flex items-center gap-2 font-body text-sm font-bold transition-colors',
                   isScrolled ? 'text-vigor-silver-600' : 'text-white/70',
                   'hover:text-vigor-orange-400'
                 )}
@@ -240,7 +240,7 @@ export default function Header() {
                 <div className="space-y-4 pt-6 border-t border-vigor-silver-200">
                   <a
                     href={`tel:${siteConfig.phone}`}
-                    className="flex items-center justify-center gap-2 w-full py-3 font-body text-vigor-silver-600"
+                    className="flex items-center justify-center gap-2 w-full py-3 font-body font-bold text-vigor-silver-600"
                   >
                     <Phone className="w-5 h-5" />
                     {siteConfig.phone}
