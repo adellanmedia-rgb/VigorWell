@@ -33,9 +33,7 @@ export default function CTASection() {
           
           <FadeIn delay={0.2}>
             <p className="text-body text-vigor-silver-600 mb-12 max-w-2xl mx-auto text-lg leading-relaxed">
-              Take the first step toward a healthier, more balanced you. 
-              Book your consultation and discover how VIGOR can help you 
-              achieve your wellness goals.
+              Book your consultation now and explore how VIGOR&apos;s innovative wellness solutions can help you optimize your body, mind, and energy, resulting in a higher quality of life.
             </p>
           </FadeIn>
 
