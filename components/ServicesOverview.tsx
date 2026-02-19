@@ -31,7 +31,7 @@ export default function ServicesOverview() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="heading-section text-vigor-silver-900 mb-6">
-              Holistic Healing Approach
+              Premium Outcome-Oriented Modalities
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
