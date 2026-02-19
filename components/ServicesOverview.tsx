@@ -36,9 +36,7 @@ export default function ServicesOverview() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-body text-vigor-silver-600">
-              At VIGOR The Wellness Spa, we believe in a holistic approach to wellness that nurtures 
-              both the body and mind. Our expert therapists provide tailored treatments designed to 
-              promote relaxation and rejuvenation.
+              Our three pillars — <span className="text-vigor-silver-800 font-semibold">Cryo Bodysculpting</span>, <span className="text-vigor-silver-800 font-semibold">Brain Mapping &amp; Neuro-PT</span>, and <span className="text-vigor-silver-800 font-semibold">Delight Spa Capsules</span> — work together to elevate energy, refine body composition, and optimize nervous system performance. Every session is part of a carefully designed plan to help you perform at your best, physically, mentally, and emotionally.
             </p>
           </FadeIn>
         </div>
