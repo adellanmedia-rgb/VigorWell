@@ -20,7 +20,7 @@ export default function CTASection() {
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
             <Badge className="mb-6 px-4 py-1.5 text-xs uppercase tracking-widest">
-              Ready to Transform?
+              Ready To Elevate?
             </Badge>
           </FadeIn>
           
