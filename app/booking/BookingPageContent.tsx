@@ -37,8 +37,8 @@ export default function BookingPageContent() {
               </div>
             </div>
             <div className="mt-4 pt-3 border-t border-vigor-silver-200 text-center">
-              <p className="font-heading text-lg text-vigor-silver-900">
-                Total investment: <span className="text-vigor-orange-500 font-bold">$99</span> for all three services.
+              <p className="font-heading text-xl md:text-2xl font-bold text-vigor-silver-900">
+                Total investment: <span className="text-vigor-orange-500">$99</span> for all three services.
               </p>
             </div>
           </div>
