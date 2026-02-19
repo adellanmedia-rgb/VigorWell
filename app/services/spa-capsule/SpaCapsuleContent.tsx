@@ -13,7 +13,7 @@ import Accordion from '@/components/Accordion'
 const features = [
   { icon: <Flame className="w-6 h-6" />, name: 'Infrared Heat', desc: 'Deep penetrating warmth' },
   { icon: <Droplets className="w-6 h-6" />, name: 'Detox Steam', desc: 'Purifying steam therapy' },
-  { icon: <Vibrate className="w-6 h-6" />, name: 'Vibration Massage', desc: 'Circulation stimulation' },
+  { icon: <Vibrate className="w-6 h-6" />, name: 'Ozone Therapy', desc: 'Skin Revitalization' },
   { icon: <Lightbulb className="w-6 h-6" />, name: 'Chromotherapy', desc: 'Mood-balancing light' },
   { icon: <Sparkles className="w-6 h-6" />, name: 'Aromatherapy', desc: 'Calming essential oils' },
   { icon: <Music className="w-6 h-6" />, name: 'Audio Relaxation', desc: 'Soothing soundscapes' },
