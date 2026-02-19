@@ -60,9 +60,7 @@ export default function AboutPage() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="text-body text-vigor-silver-300">
-                VIGOR The Wellness Spa was founded with a simple yet powerful vision: to bring 
-                cutting-edge, science-backed wellness treatments to Las Vegas in a luxurious, 
-                welcoming environment.
+                VIGOR was created with a bold vision to elevate wellness beyond relaxation, blending advanced recovery science with a refined, private environment designed to optimize how you feel, function, and perform every day.
               </p>
             </FadeIn>
           </div>
