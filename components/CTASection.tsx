@@ -70,6 +70,29 @@ export default function CTASection() {
           </FadeIn>
 
           <FadeIn delay={0.4}>
+            <div className="mt-12 max-w-xl mx-auto">
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-soft border border-vigor-silver-100">
+                <h3 className="font-heading text-xl text-vigor-silver-900 mb-6 text-center">How to Book</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <span className="w-8 h-8 rounded-full bg-vigor-orange-500 text-white flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
+                    <p className="text-body text-vigor-silver-700">Select one service, date, and time to book your first visit.</p>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <span className="w-8 h-8 rounded-full bg-vigor-orange-500 text-white flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
+                    <p className="text-body text-vigor-silver-700">Schedule your remaining two services at your appointment.</p>
+                  </div>
+                </div>
+                <div className="mt-6 pt-5 border-t border-vigor-silver-200 text-center">
+                  <p className="font-heading text-lg text-vigor-silver-900">
+                    Total investment: <span className="text-vigor-orange-500 font-bold">$99</span> for all three services.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.5}>
             <p className="mt-10 font-body text-sm text-vigor-silver-500">
               {siteConfig.address.full} • Mon-Fri {siteConfig.hours.weekdays}
             </p>
