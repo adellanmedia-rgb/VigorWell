@@ -25,7 +25,7 @@ export default function BookingPageContent() {
         </div>
       </section>
 
-      <section className="py-10 lg:py-14 bg-vigor-cream">
+      <section className="pt-10 pb-4 lg:pt-14 lg:pb-6 bg-vigor-cream">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-soft border border-vigor-silver-100">
             <h2 className="font-heading text-2xl md:text-3xl text-vigor-dark mb-6 text-center">How It Works</h2>
@@ -48,12 +48,8 @@ export default function BookingPageContent() {
         </div>
       </section>
 
-      <section className="py-8 lg:py-12 bg-vigor-cream">
+      <section className="pt-2 pb-8 lg:pt-4 lg:pb-12 bg-vigor-cream">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="text-center mb-6">
-            <h2 className="font-heading text-2xl md:text-3xl text-vigor-dark mb-1">Ready to Book?</h2>
-            <p className="font-body text-vigor-silver-600 text-sm">Select your service below to get started</p>
-          </div>
           <BookingWidget />
         </div>
       </section>
