@@ -67,6 +67,8 @@ public/images/        - Logo and service images
 - **PromoTicker**: Scrolling Grand Opening promo bar fixed above header on all pages
 
 ## Recent Changes
+- Feb 2026: Redesigned booking page with "How It Works" section above widget, compact layout, bold $99 investment line
+- Feb 2026: Changed all "vibration therapy" references to "ozone therapy" across site
 - Feb 2026: Added SEO improvements: per-page keywords, Open Graph/Twitter cards, sitemap.xml, robots.txt, llms.txt
 - Feb 2026: Added scrolling PromoTicker bar above header for Grand Opening Event
 - Feb 2026: Updated event time to 10:00 AM – 4:00 PM, added "Event Promotional Pricing" label
