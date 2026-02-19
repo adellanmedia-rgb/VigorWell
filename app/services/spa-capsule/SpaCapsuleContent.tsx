@@ -79,7 +79,7 @@ export default function SpaCapsuleContent() {
               and leave you feeling lighter, clearer, and completely renewed.
             </p>
             <p className="text-body text-vigor-silver-600 font-medium text-vigor-orange-600">
-              This is not just a sauna. This is targeted infrared + steam + vibration therapy in one powerful session.
+              This is not just a sauna. This is targeted heat, steam, and ozone therapy in one powerful session.
             </p>
           </div>
 
