@@ -83,10 +83,7 @@ export default function AboutPage() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="text-body text-vigor-silver-600 text-lg leading-relaxed">
-                Our mission is to empower every client to achieve their optimal state of wellness. 
-                Whether you're seeking to enhance cognitive performance, sculpt your body, or simply 
-                find a moment of peace in your busy life, VIGOR provides the tools, technology, and 
-                expertise to help you reach your goals.
+                Our mission is to empower every client to operate at their highest level, physically, mentally, and energetically. Whether you&apos;re enhancing cognitive performance, refining your physique, accelerating recovery, or reclaiming balance in a demanding life, VIGOR delivers science-backed tools and intentional experiences designed to produce measurable results.
               </p>
             </FadeIn>
           </div>
