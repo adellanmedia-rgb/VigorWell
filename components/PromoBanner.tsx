@@ -299,12 +299,16 @@ export default function PromoBanner() {
                       <span className="text-white font-semibold">${promo.balanceDue} balance</span> due at visit
                     </p>
                   </div>
-                  <div className="bg-gradient-to-r from-pink-500/10 to-vigor-teal-500/10 rounded-xl p-5 border border-pink-500/25">
-                    <div className="flex items-start gap-3">
-                      <Heart className="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" />
-                      <p className="font-body text-white text-sm font-semibold">
+                  <div className="relative bg-gradient-to-r from-pink-500/20 via-vigor-orange-500/15 to-pink-500/20 rounded-xl p-6 border-2 border-pink-400/40 shadow-[0_0_20px_rgba(236,72,153,0.15)]">
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-pink-500 text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">
+                      Giving Back
+                    </div>
+                    <div className="flex items-center justify-center gap-3 mt-1">
+                      <Heart className="w-6 h-6 text-pink-400 flex-shrink-0 animate-pulse" />
+                      <p className="font-display text-white text-lg md:text-xl font-bold text-center">
                         {promo.charity}
                       </p>
+                      <Heart className="w-6 h-6 text-pink-400 flex-shrink-0 animate-pulse" />
                     </div>
                   </div>
                 </div>
