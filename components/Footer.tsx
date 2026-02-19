@@ -122,7 +122,7 @@ export default function Footer() {
                   className="flex items-center gap-3 font-body text-sm text-vigor-silver-400 hover:text-vigor-orange-400 transition-colors duration-300"
                 >
                   <Phone className="w-5 h-5 flex-shrink-0 text-vigor-orange-500" />
-                  <span>844-VigorLV<br /><span className="text-vigor-silver-500">(844-844-6758)</span></span>
+                  <span>844-VigorLV<br /><span className="text-vigor-silver-500 font-semibold">(844-844-6758)</span></span>
                 </a>
               </li>
               <li>
