@@ -68,7 +68,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission */}
-      <section className="py-24 lg:py-32 bg-vigor-cream">
+      <section className="pt-24 pb-12 lg:pt-32 lg:pb-16 bg-vigor-cream">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <FadeIn>
@@ -91,7 +91,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-24 lg:py-32 bg-vigor-silver-50">
+      <section className="pt-12 pb-24 lg:pt-16 lg:pb-32 bg-vigor-silver-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <FadeIn>
