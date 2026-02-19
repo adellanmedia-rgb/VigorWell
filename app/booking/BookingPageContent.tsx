@@ -22,7 +22,7 @@ export default function BookingPageContent() {
         </div>
       </section>
 
-      <section className="pt-6 pb-2 lg:pt-8 lg:pb-3 bg-vigor-cream">
+      <section className="pt-6 pb-0 lg:pt-8 lg:pb-0 bg-vigor-cream">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <div className="bg-white/80 backdrop-blur-sm rounded-xl px-6 py-5 shadow-soft border border-vigor-silver-100">
             <h2 className="font-heading text-xl md:text-2xl text-vigor-dark mb-4 text-center">How It Works</h2>
@@ -45,7 +45,7 @@ export default function BookingPageContent() {
         </div>
       </section>
 
-      <section className="pt-2 pb-8 lg:pt-3 lg:pb-12 bg-vigor-cream">
+      <section className="pt-0 pb-8 lg:pt-0 lg:pb-12 bg-vigor-cream">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <BookingWidget />
         </div>
