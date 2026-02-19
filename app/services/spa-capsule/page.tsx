@@ -3,7 +3,7 @@ import SpaCapsuleContent from './SpaCapsuleContent'
 
 export const metadata: Metadata = {
   title: 'Delight Spa Capsule Experience | Infrared Detox Therapy',
-  description: 'Experience the Delight Spa Capsule in Las Vegas. Infrared heat therapy, steam detox, vibrational massage, chromotherapy, and aromatherapy for total rejuvenation.',
+  description: 'Experience the Delight Spa Capsule in Las Vegas. Infrared heat therapy, steam detox, ozone therapy, chromotherapy, and aromatherapy for total rejuvenation.',
   keywords: [
     'spa capsule Las Vegas',
     'infrared therapy',
@@ -21,7 +21,7 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Delight Spa Capsule Experience',
-  description: 'Multi-sensory wellness pod combining infrared heat therapy, steam detox, vibrational massage, chromotherapy, and aromatherapy for deep relaxation, detoxification, pain relief, and total rejuvenation.',
+  description: 'Multi-sensory wellness pod combining infrared heat therapy, steam detox, ozone therapy, chromotherapy, and aromatherapy for deep relaxation, detoxification, pain relief, and total rejuvenation.',
   url: 'https://vigorlv.com/services/spa-capsule',
   serviceType: 'Infrared Therapy and Detox',
   category: 'Health and Wellness',

@@ -108,7 +108,7 @@ export const services = [
     name: 'Delight Spa Capsule',
     shortName: 'Spa Capsule',
     tagline: 'Detox • Recover • Recharge • Glow',
-    shortDescription: 'A full-body wellness pod combining infrared heat, steam, vibration therapy, chromotherapy, and aromatherapy for total rejuvenation.',
+    shortDescription: 'A full-body wellness pod combining infrared heat, steam, ozone therapy, chromotherapy, and aromatherapy for total rejuvenation.',
     icon: 'sparkles',
     image: '/images/spa-capsule.jpg',
     href: '/services/spa-capsule',
