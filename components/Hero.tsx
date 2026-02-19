@@ -59,8 +59,7 @@ export default function Hero() {
 
           <motion.div {...fadeUp(0.7)}>
             <p className="font-body text-lg md:text-xl text-vigor-silver-300 max-w-xl leading-relaxed">
-              Discover holistic wellness solutions for a balanced life at Las Vegas&apos;s
-              premier wellness destination.
+              Structured body and nervous system optimization designed for high-performing adults in Summerlin.
             </p>
           </motion.div>
 
