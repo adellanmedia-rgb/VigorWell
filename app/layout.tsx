@@ -59,11 +59,20 @@ export const metadata: Metadata = {
     siteName: 'VIGOR The Wellness Spa',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: 'https://vigorlv.com/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'VIGOR The Wellness Spa',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'VIGOR The Wellness Spa | Las Vegas Premier Wellness Center',
     description: 'Experience holistic wellness at VIGOR The Wellness Spa in Las Vegas. Brain Mapping, Cryo Bodysculpting, and Spa Capsule treatments.',
+    images: ['https://vigorlv.com/images/og-image.png'],
   },
   robots: {
     index: true,
