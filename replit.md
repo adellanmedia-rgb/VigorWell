@@ -67,6 +67,9 @@ public/images/        - Logo and service images
 - **PromoTicker**: Scrolling Grand Opening promo bar fixed above header on all pages
 
 ## Recent Changes
+- Mar 2026: Updated promotion dates/times to March 9th-13th, 1pm-6pm by making PromoTicker and PromoBanner pull dynamically from constants
+- Mar 2026: Added OG image (og-image.png) with VIGOR logo for social sharing previews
+- Mar 2026: Made phone number in header bold and bigger (text-base)
 - Feb 2026: Redesigned booking page with "How It Works" section above widget, compact layout, bold $99 investment line
 - Feb 2026: Changed all "vibration therapy" references to "ozone therapy" across site
 - Feb 2026: Added SEO improvements: per-page keywords, Open Graph/Twitter cards, sitemap.xml, robots.txt, llms.txt

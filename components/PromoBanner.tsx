@@ -227,10 +227,10 @@ export default function PromoBanner() {
             <FadeIn delay={0.2}>
               <div className="flex items-center justify-center gap-3 mb-6">
                 <Calendar className="w-6 h-6 text-vigor-orange-400" />
-                <span className="font-body font-bold text-white text-lg">March 5th – 7th</span>
+                <span className="font-body font-bold text-white text-lg">{promo.dates}</span>
                 <span className="text-vigor-silver-500 text-lg">|</span>
                 <Clock className="w-6 h-6 text-vigor-orange-400" />
-                <span className="font-body font-bold text-white text-lg">10:00 AM – 4:00 PM</span>
+                <span className="font-body font-bold text-white text-lg">{promo.time}</span>
               </div>
             </FadeIn>
 
