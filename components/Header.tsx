@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ChevronDown, Phone } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { navigation, siteConfig } from '@/lib/constants'
+import { navigation, siteConfig, showPromoTicker } from '@/lib/constants'
 import { Button } from '@/components/ui/button'
 
 export default function Header() {
@@ -33,7 +33,7 @@ export default function Header() {
     <>
       <header
         className={cn(
-          'fixed top-[36px] left-0 right-0 z-50 transition-all duration-500',
+          `fixed ${showPromoTicker ? 'top-[36px]' : 'top-0'} left-0 right-0 z-50 transition-all duration-500`,
           isScrolled
             ? 'bg-white/90 backdrop-blur-xl shadow-soft py-3'
             : 'bg-transparent py-5'
