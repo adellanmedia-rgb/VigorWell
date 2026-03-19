@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PromoTicker from '@/components/PromoTicker'
+import { showPromoTicker } from '@/lib/constants'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -147,7 +148,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-vigor-cream antialiased">
         <div className="noise-overlay" aria-hidden="true" />
-        <PromoTicker />
+        {showPromoTicker && <PromoTicker />}
         <Header />
         <main>{children}</main>
         <Footer />

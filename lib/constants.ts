@@ -1,3 +1,5 @@
+export const showPromoTicker = false
+
 export const siteConfig = {
   name: 'VIGOR The Wellness Spa',
   tagline: 'Recover ∞ Rejuvenate ∞ Perform',
