@@ -53,8 +53,8 @@ export default function BookingPageContent() {
 
       <section className="py-8 bg-vigor-cream border-t border-vigor-silver-200">
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
-          <p className="font-heading text-lg text-vigor-dark mb-1">Can't find a time that works?</p>
-          <p className="font-body text-vigor-silver-600 text-sm mb-4">Call or email us and we'll get you set up.</p>
+          <p className="font-heading text-2xl md:text-3xl font-bold text-vigor-dark mb-2">Can't find a time that works?</p>
+          <p className="font-body text-vigor-silver-600 text-base md:text-lg mb-5">Call or email us and we'll get you set up.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href={`tel:${siteConfig.phone}`}
