@@ -45,13 +45,13 @@ export default function BookingPageContent() {
         </div>
       </section>
 
-      <section className="pt-0 pb-8 lg:pt-0 lg:pb-12 bg-vigor-cream">
+      <section className="pt-0 pb-2 lg:pb-3 bg-vigor-cream">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <BookingWidget />
         </div>
       </section>
 
-      <section className="py-8 bg-vigor-cream border-t border-vigor-silver-200">
+      <section className="py-4 lg:py-5 bg-vigor-cream border-t border-vigor-silver-200">
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
           <p className="font-heading text-2xl md:text-3xl font-bold text-vigor-dark mb-2">Can't find a time that works?</p>
           <p className="font-body text-vigor-silver-600 text-base md:text-lg mb-5">Call or email us and we'll get you set up.</p>
