@@ -33,7 +33,8 @@ export default function Header() {
     <>
       <header
         className={cn(
-          `fixed ${showPromoTicker ? 'top-[36px]' : 'top-0'} left-0 right-0 z-50 transition-all duration-500`,
+          'fixed left-0 right-0 z-50 transition-all duration-500',
+          showPromoTicker ? 'top-[36px]' : 'top-0',
           isScrolled
             ? 'bg-white/90 backdrop-blur-xl shadow-soft py-3'
             : 'bg-transparent py-5'
