@@ -50,6 +50,34 @@ export default function BookingPageContent() {
           <BookingWidget />
         </div>
       </section>
+
+      <section className="py-8 bg-vigor-cream border-t border-vigor-silver-200">
+        <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
+          <p className="font-heading text-lg text-vigor-dark mb-1">Can't find a time that works?</p>
+          <p className="font-body text-vigor-silver-600 text-sm mb-4">Call or email us and we'll get you set up.</p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href={`tel:${siteConfig.phone}`}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-vigor-orange-500 text-white font-body font-semibold text-sm hover:bg-vigor-orange-600 transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              {siteConfig.phone}
+            </a>
+            <a
+              href={`mailto:${siteConfig.email}`}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-vigor-silver-300 text-vigor-dark font-body font-semibold text-sm hover:border-vigor-orange-400 hover:text-vigor-orange-500 transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              {siteConfig.email}
+            </a>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
