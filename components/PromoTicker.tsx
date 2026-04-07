@@ -1,10 +1,9 @@
 'use client'
 
 import Link from 'next/link'
-import { promo } from '@/lib/constants'
 
 export default function PromoTicker() {
-  const message = `🔥 GRAND OPENING EVENT — ${promo.dates} | All 3 Services for Just $99 (Save 80%!) | Limited Slots — Book Now! 🔥`
+  const message = `🔥 INTRO OFFER — Hot + Cold Body Sculpt Experience | Cryo Bodysculpting + Spa Capsule — $99 Per Service | Limited Availability — Book Now! 🔥`
 
   return (
     <div className="fixed top-0 left-0 right-0 bg-gradient-to-r from-vigor-orange-600 via-vigor-orange-500 to-vigor-orange-600 overflow-hidden z-[60]">
