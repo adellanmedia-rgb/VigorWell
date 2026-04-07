@@ -56,7 +56,7 @@ export default function ServicesPage() {
       <section className="py-24 lg:py-32 bg-vigor-cream">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <StaggerContainer className="space-y-12" staggerDelay={0.2}>
-            {services.map((service, index) => (
+            {services.filter(s => !s.hidden).map((service, index) => (
               <StaggerItem key={service.id}>
                 <Link href={service.href} className="group block">
                   <div className={`grid lg:grid-cols-2 gap-8 lg:gap-16 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
