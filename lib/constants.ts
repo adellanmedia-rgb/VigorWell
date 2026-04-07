@@ -1,4 +1,4 @@
-export const showPromoTicker = false
+export const showPromoTicker = true
 
 export const siteConfig = {
   name: 'VIGOR The Wellness Spa',
