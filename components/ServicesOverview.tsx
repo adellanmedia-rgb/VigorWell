@@ -41,8 +41,8 @@ export default function ServicesOverview() {
           </FadeIn>
         </div>
 
-        <StaggerContainer className="grid md:grid-cols-3 gap-8 lg:gap-10" staggerDelay={0.15}>
-          {services.map((service) => (
+        <StaggerContainer className="grid md:grid-cols-2 gap-8 lg:gap-10 max-w-4xl mx-auto" staggerDelay={0.15}>
+          {services.filter(s => !s.hidden).map((service) => (
             <StaggerItem key={service.id}>
               <motion.div
                 whileHover={{ y: -10 }}

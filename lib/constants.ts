@@ -33,7 +33,6 @@ export const navigation = [
     name: 'Services', 
     href: '/services',
     children: [
-      { name: 'Brain Mapping & Neuro-PT', href: '/services/brain-mapping' },
       { name: 'Cryo Bodysculpting', href: '/services/cryo-bodysculpting' },
       { name: 'Spa Capsule Experience', href: '/services/spa-capsule' },
     ]
@@ -94,6 +93,7 @@ export const services = [
     icon: 'brain',
     image: '/images/brain-mapping.jpg',
     href: '/services/brain-mapping',
+    hidden: true,
   },
   {
     id: 'cryo-bodysculpting',
