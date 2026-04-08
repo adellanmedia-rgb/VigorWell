@@ -1,11 +1,9 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowRight, Snowflake, Flame } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
 
 export default function Hero() {
   return (
@@ -25,7 +23,7 @@ export default function Hero() {
       {/* Content — centered single column */}
       <div className="relative z-10 w-full max-w-3xl mx-auto px-6 lg:px-8 pt-28 pb-12 text-center flex flex-col items-center gap-4">
 
-        {/* HOT + COLD heading */}
+        {/* HOT + COLD heading — HOT = orange (warm), COLD = blue (cool) */}
         <motion.div
           initial={{ y: 16 }}
           animate={{ y: 0 }}
@@ -33,7 +31,6 @@ export default function Hero() {
         >
           <h1 className="font-display leading-none tracking-tight">
             <span className="block text-5xl md:text-6xl lg:text-7xl">
-              {/* HOT = orange (warm), COLD = blue (cool) */}
               <span className="text-vigor-orange-500">HOT</span>
               <span className="text-white mx-2 lg:mx-3">+</span>
               <span style={{ color: '#5AA9E6' }}>COLD</span>
@@ -85,7 +82,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.1, ease: [0.22, 0.6, 0.36, 1] }}
           className="grid grid-cols-2 gap-3 md:gap-4 w-full max-w-sm"
         >
-          {/* LEFT: Cryo Bodysculpting — cold/blue */}
+          {/* LEFT: Cryo Bodysculpting */}
           <div
             className="flex flex-col items-center gap-2 px-4 py-4 rounded-xl border"
             style={{ background: 'rgba(90,169,230,0.07)', borderColor: 'rgba(90,169,230,0.22)' }}
@@ -99,7 +96,7 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* RIGHT: Spa Capsule — hot/orange */}
+          {/* RIGHT: Spa Capsule */}
           <div
             className="flex flex-col items-center gap-2 px-4 py-4 rounded-xl border"
             style={{ background: 'rgba(232,93,4,0.08)', borderColor: 'rgba(232,93,4,0.22)' }}
@@ -132,81 +129,7 @@ export default function Hero() {
 
       </div>
 
-      {/*
-        ====== ORIGINAL HERO — preserved for restoration ======
-
-        To restore the original hero, replace everything in this file with the
-        following structure (or revert to the commit before Task #7):
-
-        <section className="relative min-h-screen flex items-center overflow-hidden bg-vigor-dark">
-          <Image
-            src="/images/hero-wellness.jpg"
-            alt="Premium wellness spa"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/80 to-vigor-dark/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/30" />
-
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 pt-32 lg:pt-44">
-            <div className="max-w-4xl space-y-8">
-
-              <motion.div {...fadeUp(0.2)}>
-                <Badge variant="glow" className="gap-2 px-4 py-2 border border-white/10">
-                  <span className="w-2 h-2 rounded-full bg-vigor-orange-500 animate-pulse" />
-                  <span className="font-body text-sm text-vigor-silver-300">
-                    Recover ∞ Rejuvenate ∞ Perform
-                  </span>
-                </Badge>
-              </motion.div>
-
-              <div className="space-y-4">
-                <h1 className="font-display text-5xl md:text-6xl lg:text-[4rem] xl:text-[5rem] text-white leading-[1.05] tracking-tight">
-                  <motion.span className="inline-block" {...headingReveal(0.3)}>
-                    Optimize How You
-                  </motion.span>
-                  <br />
-                  <motion.span className="inline-block gradient-text" {...headingReveal(0.5)}>
-                    Look, Feel and Function
-                  </motion.span>
-                </h1>
-              </div>
-
-              <motion.div {...fadeUp(0.7)}>
-                <p className="font-body text-lg md:text-xl text-vigor-silver-300 max-w-xl leading-relaxed">
-                  Structured body and nervous system optimization designed for high-performing adults in Summerlin.
-                </p>
-              </motion.div>
-
-              <motion.div {...fadeUp(0.9)}>
-                <div className="flex flex-wrap items-center gap-4">
-                  <Button asChild size="lg">
-                    <Link href="/booking" className="gap-3">
-                      <span>Book Your Session</span>
-                      <ArrowRight className="w-5 h-5" />
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" size="lg">
-                    <Link href="/services">Explore Services</Link>
-                  </Button>
-                </div>
-              </motion.div>
-
-              -- Social proof row: 500+ Happy Clients avatars + 4.8 star rating --
-              -- Scroll indicator at bottom of section --
-
-            </div>
-          </div>
-        </section>
-
-        Also restore these animation helpers at top of file:
-          const fadeUp = (delay) => ({ initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5, delay, ease: [0.25, 0.4, 0.25, 1] } })
-          const headingReveal = (delay) => ({ initial: { opacity: 0.15, y: 10 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.5, delay, ease: [0.25, 0.4, 0.25, 1] } })
-        And restore: import Image from 'next/image' and import { Badge } from '@/components/ui/badge'
-        Avatar images: /images/avatar-1_1.jpg through avatar-1_4.jpg
-      */}
+      {/* Original hero (removed in Task #7): bg /images/hero-wellness.jpg, heading "Optimize How You Look, Feel and Function", CTAs Book/Explore, avatar row. Revert to pre-Task-#7 commit to restore. */}
 
     </section>
   )
