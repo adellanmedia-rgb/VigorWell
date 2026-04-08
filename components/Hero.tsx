@@ -20,7 +20,7 @@ export default function Hero() {
           sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-black/75" />
       </div>
 
       {/* Right half: Spa Capsule */}
@@ -33,7 +33,7 @@ export default function Hero() {
           sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-black/75" />
       </div>
 
       {/* Color tints — warm orange left, cool blue right */}
