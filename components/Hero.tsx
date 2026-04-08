@@ -13,7 +13,7 @@ export default function Hero() {
       {/* Left half: Cryo Bodysculpting */}
       <div className="absolute top-0 left-0 right-0 h-1/2 md:inset-y-0 md:right-auto md:w-1/2 md:h-auto">
         <Image
-          src="/images/cryo-hero.jpg"
+          src="/images/cryo-bodysculpting.jpg"
           alt=""
           fill
           priority
@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Right half: Spa Capsule */}
       <div className="absolute bottom-0 left-0 right-0 h-1/2 md:inset-y-0 md:left-auto md:w-1/2 md:h-auto">
         <Image
-          src="/images/spa-capsule-hero.jpg"
+          src="/images/spa-capsule.jpg"
           alt=""
           fill
           priority
