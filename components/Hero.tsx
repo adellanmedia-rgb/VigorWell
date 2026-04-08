@@ -72,13 +72,13 @@ export default function Hero() {
           initial={{ y: 12 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.5, delay: 0.05, ease: [0.22, 0.6, 0.36, 1] }}
-          className="flex items-center gap-3 md:gap-4"
+          className="flex items-center gap-2 md:gap-4"
         >
-          <span className="font-body text-[11px] md:text-xs text-white font-bold tracking-[0.18em] uppercase">FREEZE FAT</span>
+          <span className="font-body text-[10px] md:text-xs text-white font-bold tracking-[0.1em] md:tracking-[0.18em] uppercase whitespace-nowrap">FREEZE FAT</span>
           <span className="w-px h-3 bg-white/40 shrink-0" />
-          <span className="font-body text-[11px] md:text-xs text-white font-bold tracking-[0.18em] uppercase">SWEAT IT OUT</span>
+          <span className="font-body text-[10px] md:text-xs text-white font-bold tracking-[0.1em] md:tracking-[0.18em] uppercase whitespace-nowrap">SWEAT IT OUT</span>
           <span className="w-px h-3 bg-white/40 shrink-0" />
-          <span className="font-body text-[11px] md:text-xs text-white font-bold tracking-[0.18em] uppercase">SCULPT YOUR BODY</span>
+          <span className="font-body text-[10px] md:text-xs text-white font-bold tracking-[0.1em] md:tracking-[0.18em] uppercase whitespace-nowrap">SCULPT YOUR BODY</span>
         </motion.div>
 
         {/* $99 pricing badge */}
