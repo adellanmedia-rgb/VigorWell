@@ -95,7 +95,7 @@ export default function Hero() {
               boxShadow: '0 0 36px rgba(201,168,76,0.09)',
             }}
           >
-            <span className="font-display text-4xl md:text-5xl leading-none" style={{ color: '#f0c040' }}>$99</span>
+            <span className="font-display text-4xl md:text-5xl leading-none text-vigor-orange-500">$99</span>
             <span className="font-heading text-xs tracking-widest uppercase text-white/85 mt-1">
               Intro Experience
             </span>
