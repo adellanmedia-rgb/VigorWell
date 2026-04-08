@@ -33,12 +33,12 @@ export default function BookingPageContent() {
               </div>
               <div className="flex items-start gap-3">
                 <span className="w-7 h-7 rounded-full bg-vigor-orange-500 text-white flex items-center justify-center text-xs font-bold flex-shrink-0">2</span>
-                <p className="text-body text-vigor-silver-700 text-sm">Schedule your remaining two services at your appointment.</p>
+                <p className="text-body text-vigor-silver-700 text-sm">Schedule your remaining service at your appointment.</p>
               </div>
             </div>
             <div className="mt-4 pt-3 border-t border-vigor-silver-200 text-center">
               <p className="font-heading text-xl md:text-2xl font-bold text-vigor-silver-900">
-                Total investment: <span className="text-vigor-orange-500">$99</span> for all three services.
+                Total investment: Only <span className="text-vigor-orange-500">$99</span> for the Intro Cold &amp; Hot Experience.
               </p>
             </div>
           </div>
