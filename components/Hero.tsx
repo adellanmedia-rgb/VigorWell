@@ -10,9 +10,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-vigor-dark">
 
-      {/* === BACKGROUND: split cryo (left) / spa (right) === */}
-
-      {/* Left half — Cryo Bodysculpting (mobile: top half) */}
+      {/* Left half: Cryo Bodysculpting */}
       <div className="absolute top-0 left-0 right-0 h-1/2 md:inset-y-0 md:right-auto md:w-1/2 md:h-auto">
         <Image
           src="/images/cryo-hero.jpg"
@@ -25,7 +23,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/55" />
       </div>
 
-      {/* Right half — Spa Capsule (mobile: bottom half) */}
+      {/* Right half: Spa Capsule */}
       <div className="absolute bottom-0 left-0 right-0 h-1/2 md:inset-y-0 md:left-auto md:w-1/2 md:h-auto">
         <Image
           src="/images/spa-capsule-hero.jpg"
@@ -38,7 +36,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/55" />
       </div>
 
-      {/* Color tints — warm orange left, cool blue right (unchanged from Task #7) */}
+      {/* Color tints — warm orange left, cool blue right */}
       <div
         className="absolute inset-0"
         style={{ background: 'radial-gradient(ellipse 55% 70% at 5% 50%, rgba(232,93,4,0.15) 0%, transparent 100%)' }}
@@ -48,7 +46,7 @@ export default function Hero() {
         style={{ background: 'radial-gradient(ellipse 55% 70% at 95% 50%, rgba(90,169,230,0.13) 0%, transparent 100%)' }}
       />
 
-      {/* Content — centered single column (unchanged from Task #7) */}
+      {/* Content */}
       <div className="relative z-10 w-full max-w-3xl mx-auto px-6 lg:px-8 pt-28 pb-12 text-center flex flex-col items-center gap-4">
 
         {/* HOT + COLD heading — HOT = orange (warm), COLD = blue (cool) */}
