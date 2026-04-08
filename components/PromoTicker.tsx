@@ -3,7 +3,7 @@
 import Link from 'next/link'
 
 export default function PromoTicker() {
-  const message = `🔥 INTRO OFFER — Hot + Cold Body Sculpt Experience | Cryo Bodysculpting + Spa Capsule — Both for $99 | Limited Availability — Book Now! 🔥`
+  const message = `🔥 INTRO COLD & HOT EXPERIENCE — Only $99 | Limited Availability — Book Now! 🔥`
 
   return (
     <div className="fixed top-0 left-0 right-0 bg-gradient-to-r from-vigor-orange-600 via-vigor-orange-500 to-vigor-orange-600 overflow-hidden z-[60]">
