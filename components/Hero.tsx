@@ -23,7 +23,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-vigor-dark">
       <Image
-        src="/images/hero-wellness.jpg"
+        src="/images/hero-hot-cold-promo.png" // TEMP: original was "/images/hero-wellness.jpg"
         alt="Premium wellness spa"
         fill
         priority
