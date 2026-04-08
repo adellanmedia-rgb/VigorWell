@@ -99,7 +99,7 @@ export default function Hero() {
             <span className="font-heading text-xs tracking-widest uppercase text-white/85 mt-1">
               Intro Experience
             </span>
-            <span className="font-body text-[11px] text-vigor-silver-600 mt-0.5">
+            <span className="font-body text-[11px] text-white mt-0.5">
               Regular $425 Value
             </span>
           </div>
