@@ -10,27 +10,14 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-vigor-dark">
 
-      {/* Left half: Cryo Bodysculpting */}
-      <div className="absolute top-0 left-0 right-0 h-1/2 md:inset-y-0 md:right-auto md:w-1/2 md:h-auto">
+      {/* Full-bleed background */}
+      <div className="absolute inset-0">
         <Image
-          src="/images/cryo-bodysculpting.jpg"
+          src="/images/hero-wellness.jpg"
           alt=""
           fill
           priority
-          sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-black/90" />
-      </div>
-
-      {/* Right half: Spa Capsule */}
-      <div className="absolute bottom-0 left-0 right-0 h-1/2 md:inset-y-0 md:left-auto md:w-1/2 md:h-auto">
-        <Image
-          src="/images/spa-capsule.jpg"
-          alt=""
-          fill
-          priority
-          sizes="(max-width: 768px) 100vw, 50vw"
+          sizes="100vw"
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/90" />
