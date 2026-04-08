@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, ArrowUpRight } from 'lucide-react'
 import { siteConfig, services } from '@/lib/constants'
 import { Separator } from '@/components/ui/separator'
@@ -33,26 +32,22 @@ export default function Footer() {
               designed for real results.
             </p>
             <div className="flex items-center gap-4">
-              <motion.a
+              <a
                 href={siteConfig.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-vigor-orange-500 transition-colors duration-300"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-vigor-orange-500 hover:scale-110 transition-all duration-300"
               >
                 <Facebook className="w-5 h-5" />
-              </motion.a>
-              <motion.a
+              </a>
+              <a
                 href={siteConfig.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-vigor-orange-500 transition-colors duration-300"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-vigor-orange-500 hover:scale-110 transition-all duration-300"
               >
                 <Instagram className="w-5 h-5" />
-              </motion.a>
+              </a>
             </div>
           </div>
 
