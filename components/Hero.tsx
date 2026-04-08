@@ -31,10 +31,11 @@ export default function Hero() {
         className="object-cover"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/80 to-vigor-dark/40" />
-      <div className="absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/30" />
+      {/* TEMP: gradients and content hidden while promo image is active */}
+      <div className="hidden absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/80 to-vigor-dark/40" />
+      <div className="hidden absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/30" />
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 pt-32 lg:pt-44">
+      <div className="hidden relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 pt-32 lg:pt-44">
         <div className="max-w-4xl space-y-8">
           <motion.div {...fadeUp(0.2)}>
             <Badge variant="glow" className="gap-2 px-4 py-2 border border-white/10">
@@ -131,7 +132,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+        className="hidden absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
