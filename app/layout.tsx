@@ -107,6 +107,7 @@ export default function RootLayout({
         {/* Local Business Schema */}
         <script
           type="application/ld+json"
+          suppressHydrationWarning
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
