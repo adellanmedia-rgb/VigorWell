@@ -68,14 +68,18 @@ export default function Hero() {
         </motion.div>
 
         {/* Tagline */}
-        <motion.p
+        <motion.div
           initial={{ y: 12 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.5, delay: 0.05, ease: [0.22, 0.6, 0.36, 1] }}
-          className="font-body text-[11px] md:text-xs text-vigor-silver-500 tracking-[0.18em] uppercase"
+          className="flex items-center gap-3 md:gap-4"
         >
-          FREEZE FAT. SWEAT IT OUT. SCULPT YOUR BODY.
-        </motion.p>
+          <span className="font-body text-[11px] md:text-xs text-white font-bold tracking-[0.18em] uppercase">FREEZE FAT</span>
+          <span className="w-px h-3 bg-white/40 shrink-0" />
+          <span className="font-body text-[11px] md:text-xs text-white font-bold tracking-[0.18em] uppercase">SWEAT IT OUT</span>
+          <span className="w-px h-3 bg-white/40 shrink-0" />
+          <span className="font-body text-[11px] md:text-xs text-white font-bold tracking-[0.18em] uppercase">SCULPT YOUR BODY</span>
+        </motion.div>
 
         {/* $99 pricing badge */}
         <motion.div
