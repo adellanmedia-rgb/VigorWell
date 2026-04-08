@@ -121,7 +121,7 @@ export default function Hero() {
             <p className="font-heading text-[11px] md:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#7FC8F8' }}>
               Cryo Bodysculpting
             </p>
-            <p className="font-body text-[11px] text-vigor-silver-500 text-center leading-snug">
+            <p className="font-body text-[11px] text-white text-center leading-snug">
               Freeze Fat<br />Tighten &amp; Contour
             </p>
           </div>
@@ -135,7 +135,7 @@ export default function Hero() {
             <p className="font-heading text-[11px] md:text-xs font-bold text-vigor-orange-400 uppercase tracking-wider text-center">
               Spa Capsule
             </p>
-            <p className="font-body text-[11px] text-vigor-silver-500 text-center leading-snug">
+            <p className="font-body text-[11px] text-white text-center leading-snug">
               Detox &amp; Sweat<br />Boost Circulation
             </p>
           </div>
