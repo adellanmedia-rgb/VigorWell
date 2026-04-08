@@ -1,156 +1,133 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Snowflake, Flame } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-
-const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5, delay, ease: [0.25, 0.4, 0.25, 1] },
-})
-
-const headingReveal = (delay: number) => ({
-  initial: { opacity: 0.15, y: 10 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5, delay, ease: [0.25, 0.4, 0.25, 1] },
-})
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-vigor-dark">
-      <Image
-        src="/images/hero-hot-cold-promo.png" // TEMP: original was "/images/hero-wellness.jpg"
-        alt="Premium wellness spa"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-vigor-dark">
+
+      {/* Background — cool left, warm right */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#071422] via-[#0A0A0A] to-[#160800]" />
+      <div
+        className="absolute inset-0"
+        style={{ background: 'radial-gradient(ellipse 55% 70% at 5% 50%, rgba(90,169,230,0.14) 0%, transparent 100%)' }}
+      />
+      <div
+        className="absolute inset-0"
+        style={{ background: 'radial-gradient(ellipse 55% 70% at 95% 50%, rgba(232,93,4,0.16) 0%, transparent 100%)' }}
       />
 
-      {/* TEMP: gradients and content hidden while promo image is active */}
-      <div className="hidden absolute inset-0 bg-gradient-to-r from-vigor-dark via-vigor-dark/80 to-vigor-dark/40" />
-      <div className="hidden absolute inset-0 bg-gradient-to-t from-vigor-dark via-transparent to-vigor-dark/30" />
+      {/* Content — two-column on desktop, stacked on mobile */}
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 lg:px-10 flex flex-col lg:flex-row items-center justify-between gap-10 pt-28 pb-12 lg:pt-32 lg:pb-16">
 
-      <div className="hidden relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 pt-32 lg:pt-44">
-        <div className="max-w-4xl space-y-8">
-          <motion.div {...fadeUp(0.2)}>
-            <Badge variant="glow" className="gap-2 px-4 py-2 border border-white/10">
-              <span className="w-2 h-2 rounded-full bg-vigor-orange-500 animate-pulse" />
-              <span className="font-body text-sm text-vigor-silver-300">
-                Recover ∞ Rejuvenate ∞ Perform
-              </span>
-            </Badge>
-          </motion.div>
-
-          <div className="space-y-4">
-            <h1 className="font-display text-5xl md:text-6xl lg:text-[4rem] xl:text-[5rem] text-white leading-[1.05] tracking-tight">
-              <motion.span className="inline-block" {...headingReveal(0.3)}>
-                Optimize How You
-              </motion.span>
-              <br />
-              <motion.span className="inline-block gradient-text" {...headingReveal(0.5)}>
-                Look, Feel and Function
-              </motion.span>
-            </h1>
-          </div>
-
-          <motion.div {...fadeUp(0.7)}>
-            <p className="font-body text-lg md:text-xl text-vigor-silver-300 max-w-xl leading-relaxed">
-              Structured body and nervous system optimization designed for high-performing adults in Summerlin.
-            </p>
-          </motion.div>
-
-          <motion.div {...fadeUp(0.9)}>
-            <div className="flex flex-wrap items-center gap-4">
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Button asChild size="lg">
-                  <Link href="/booking" className="gap-3">
-                    <span>Book Your Session</span>
-                    <ArrowRight className="w-5 h-5" />
-                  </Link>
-                </Button>
-              </motion.div>
-
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Button asChild variant="outline" size="lg">
-                  <Link href="/services">
-                    Explore Services
-                  </Link>
-                </Button>
-              </motion.div>
-            </div>
-          </motion.div>
-
-          <motion.div {...fadeUp(1.1)}>
-            <div className="flex items-center gap-8 pt-4">
-              <div className="flex items-center gap-2">
-                <div className="flex -space-x-2">
-                  {['/images/avatar-1_1.jpg', '/images/avatar-1_2.jpg', '/images/avatar-1_3.jpg', '/images/avatar-1_4.jpg'].map((src, i) => (
-                    <img
-                      key={i}
-                      src={src}
-                      alt="Happy client"
-                      className="w-8 h-8 rounded-full object-cover border-2 border-vigor-dark"
-                    />
-                  ))}
-                </div>
-                <span className="font-body text-sm text-vigor-silver-400">
-                  500+ Happy Clients
-                </span>
-              </div>
-              <div className="flex items-center gap-1">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <svg
-                    key={i}
-                    className="w-4 h-4 text-vigor-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-                <span className="font-body text-sm text-vigor-silver-400 ml-1">
-                  4.8 Rating
-                </span>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="hidden absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
-      >
+        {/* LEFT: Heading + tagline + pricing */}
         <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
-          className="flex flex-col items-center gap-2"
+          className="flex flex-col items-center lg:items-start gap-5 text-center lg:text-left"
+          initial={{ opacity: 0, x: -24 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: [0.22, 0.6, 0.36, 1] }}
         >
-          <span className="font-body text-xs text-vigor-silver-500 uppercase tracking-widest">
-            Scroll
-          </span>
-          <div className="w-6 h-10 rounded-full border-2 border-vigor-silver-600 flex justify-center pt-2">
-            <motion.div
-              animate={{ y: [0, 12, 0], opacity: [1, 0, 1] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
-              className="w-1.5 h-1.5 rounded-full bg-vigor-orange-500"
-            />
+          {/* Main heading */}
+          <h1 className="font-display leading-none tracking-tight">
+            <span className="block text-5xl md:text-6xl lg:text-7xl">
+              <span style={{ color: '#5AA9E6' }}>HOT</span>
+              <span className="text-white mx-2 lg:mx-3">+</span>
+              <span className="text-vigor-orange-500">COLD</span>
+            </span>
+            <span className="block font-heading font-light tracking-[0.22em] uppercase text-base md:text-lg lg:text-xl text-white/70 mt-2">
+              Body Sculpt Experience
+            </span>
+          </h1>
+
+          {/* Tagline */}
+          <p className="font-body text-[11px] md:text-xs text-vigor-silver-500 tracking-[0.18em] uppercase">
+            Freeze Fat&nbsp;&nbsp;·&nbsp;&nbsp;Sweat It Out&nbsp;&nbsp;·&nbsp;&nbsp;Sculpt Your Body
+          </p>
+
+          {/* $99 pricing block */}
+          <div
+            className="inline-flex flex-col items-center px-8 py-5 rounded-2xl border"
+            style={{
+              borderColor: 'rgba(201,168,76,0.45)',
+              background: 'linear-gradient(160deg, #1e1700, #0d0b00)',
+              boxShadow: '0 0 40px rgba(201,168,76,0.08)',
+            }}
+          >
+            <span className="font-display text-5xl lg:text-6xl leading-none" style={{ color: '#f0c040' }}>$99</span>
+            <span className="font-heading text-xs tracking-widest uppercase text-white/85 mt-2">
+              Intro Experience
+            </span>
+            <span className="font-body text-[11px] text-vigor-silver-600 mt-0.5">
+              Regular $425 Value
+            </span>
           </div>
         </motion.div>
-      </motion.div>
+
+        {/* RIGHT: Service cards + CTA */}
+        <motion.div
+          className="flex flex-col items-center lg:items-start gap-4 w-full max-w-xs"
+          initial={{ opacity: 0, x: 24 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.12, ease: [0.22, 0.6, 0.36, 1] }}
+        >
+          {/* Cryo card */}
+          <div
+            className="w-full flex items-center gap-4 px-5 py-4 rounded-xl border"
+            style={{ background: 'rgba(90,169,230,0.07)', borderColor: 'rgba(90,169,230,0.22)' }}
+          >
+            <Snowflake className="w-8 h-8 shrink-0" style={{ color: '#7FC8F8' }} />
+            <div>
+              <p className="font-heading text-sm font-bold uppercase tracking-wider" style={{ color: '#7FC8F8' }}>
+                Cryo Bodysculpting
+              </p>
+              <p className="font-body text-xs text-vigor-silver-500 mt-0.5">
+                Freeze Fat · Tighten &amp; Contour
+              </p>
+            </div>
+          </div>
+
+          {/* Spa Capsule card */}
+          <div
+            className="w-full flex items-center gap-4 px-5 py-4 rounded-xl border"
+            style={{ background: 'rgba(232,93,4,0.08)', borderColor: 'rgba(232,93,4,0.22)' }}
+          >
+            <Flame className="w-8 h-8 shrink-0 text-vigor-orange-400" />
+            <div>
+              <p className="font-heading text-sm font-bold text-vigor-orange-400 uppercase tracking-wider">
+                Spa Capsule
+              </p>
+              <p className="font-body text-xs text-vigor-silver-500 mt-0.5">
+                Detox &amp; Sweat · Boost Circulation
+              </p>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="w-full mt-1">
+            <Button asChild size="lg" className="w-full gap-3">
+              <Link href="/booking">
+                <span>Book Now — $99</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </Button>
+          </motion.div>
+        </motion.div>
+
+      </div>
+
+      {/*
+        ====== ORIGINAL HERO (hidden, preserved for restoration) ======
+        Background: /images/hero-wellness.jpg
+        Heading: "Optimize How You Look, Feel and Function"
+        Body: "Structured body and nervous system optimization…"
+        CTAs: Book Your Session + Explore Services
+        Social proof: 500+ Happy Clients avatars, 4.8 star rating
+        To restore: revert Hero.tsx to the commit before Task #7.
+      */}
+
     </section>
   )
 }
